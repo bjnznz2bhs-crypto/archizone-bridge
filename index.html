@@ -1,0 +1,3686 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>ArchiZone Bridge — Archicad AI 建築ゾーニングCAD</title>
+  <style id="tailwind-prebuilt">*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:-apple-system,BlinkMacSystemFont,Hiragino Sans,Hiragino Kaku Gothic ProN,Noto Sans JP,Meiryo,Segoe UI,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:0}.bottom-3{bottom:.75rem}.bottom-\[62px\]{bottom:62px}.left-0{left:0}.left-1\/2{left:50%}.left-16{left:4rem}.left-3{left:.75rem}.right-0{right:0}.top-0{top:0}.top-1\/2{top:50%}.top-10{top:2.5rem}.top-16{top:4rem}.top-3{top:.75rem}.top-9{top:2.25rem}.z-20{z-index:20}.z-30{z-index:30}.z-50{z-index:50}.col-span-1{grid-column:span 1/span 1}.col-span-2{grid-column:span 2/span 2}.col-span-3{grid-column:span 3/span 3}.col-span-4{grid-column:span 4/span 4}.my-0\.5{margin-top:.125rem}.mb-0\.5,.my-0\.5{margin-bottom:.125rem}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.ml-0\.5{margin-left:.125rem}.ml-1{margin-left:.25rem}.mr-1{margin-right:.25rem}.mt-0\.5{margin-top:.125rem}.block{display:block}.flex{display:flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-\[18px\]{height:18px}.h-\[52px\]{height:52px}.h-px{height:1px}.h-screen{height:100vh}.max-h-64{max-height:16rem}.min-h-0{min-height:0}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-14{width:3.5rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-28{width:7rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-72{width:18rem}.w-8{width:2rem}.w-\[18px\]{width:18px}.w-\[340px\]{width:340px}.w-full{width:100%}.w-px{width:1px}.w-screen{width:100vw}.min-w-0{min-width:0}.max-w-\[210px\]{max-width:210px}.max-w-\[90vw\]{max-width:90vw}.max-w-\[95vw\]{max-width:95vw}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.-translate-y-1\/2{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.resize-none{resize:none}.resize{resize:both}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-3\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.875rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.875rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-sm{border-radius:.125rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-x{border-left-width:1px;border-right-width:1px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208/var(--tw-border-opacity,1))}.border-md-border{--tw-border-opacity:1;border-color:rgb(224 227 231/var(--tw-border-opacity,1))}.border-md-border\/70{border-color:rgba(224,227,231,.7)}.border-md-primary{--tw-border-opacity:1;border-color:rgb(26 115 232/var(--tw-border-opacity,1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202/var(--tw-border-opacity,1))}.bg-\[\#202124\]{--tw-bg-opacity:1;background-color:rgb(32 33 36/var(--tw-bg-opacity,1))}.bg-blue-400{--tw-bg-opacity:1;background-color:rgb(96 165 250/var(--tw-bg-opacity,1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153/var(--tw-bg-opacity,1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245/var(--tw-bg-opacity,1))}.bg-md-border{--tw-bg-opacity:1;background-color:rgb(224 227 231/var(--tw-bg-opacity,1))}.bg-md-container{--tw-bg-opacity:1;background-color:rgb(241 243 244/var(--tw-bg-opacity,1))}.bg-md-danger{--tw-bg-opacity:1;background-color:rgb(217 48 37/var(--tw-bg-opacity,1))}.bg-md-primary{--tw-bg-opacity:1;background-color:rgb(26 115 232/var(--tw-bg-opacity,1))}.bg-md-primaryContainer{--tw-bg-opacity:1;background-color:rgb(232 240 254/var(--tw-bg-opacity,1))}.bg-md-primaryContainer\/50{background-color:rgba(232,240,254,.5)}.bg-md-success{--tw-bg-opacity:1;background-color:rgb(24 128 56/var(--tw-bg-opacity,1))}.bg-md-surface{--tw-bg-opacity:1;background-color:rgb(248 249 250/var(--tw-bg-opacity,1))}.bg-md-surface\/60{background-color:rgba(248,249,250,.6)}.bg-md-text{--tw-bg-opacity:1;background-color:rgb(32 33 36/var(--tw-bg-opacity,1))}.bg-red-400{--tw-bg-opacity:1;background-color:rgb(248 113 113/var(--tw-bg-opacity,1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.bg-red-50\/40{background-color:hsla(0,86%,97%,.4)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/95{background-color:hsla(0,0%,100%,.95)}.p-0\.5{padding:.125rem}.p-1{padding:.25rem}.p-1\.5{padding:.375rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-3\.5{padding:.875rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:.5rem}.pl-2\.5{padding-left:.625rem}.pr-0\.5{padding-right:.125rem}.pt-1{padding-top:.25rem}.pt-2{padding-top:.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.font-sans{font-family:-apple-system,BlinkMacSystemFont,Hiragino Sans,Hiragino Kaku Gothic ProN,Noto Sans JP,Meiryo,Segoe UI,system-ui,sans-serif}.text-\[10\.5px\]{font-size:10.5px}.text-\[10px\]{font-size:10px}.text-\[11\.5px\]{font-size:11.5px}.text-\[11px\]{font-size:11px}.text-\[13px\]{font-size:13px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6/var(--tw-text-opacity,1))}.text-md-danger{--tw-text-opacity:1;color:rgb(217 48 37/var(--tw-text-opacity,1))}.text-md-muted{--tw-text-opacity:1;color:rgb(128 134 139/var(--tw-text-opacity,1))}.text-md-onPrimaryContainer{--tw-text-opacity:1;color:rgb(23 78 166/var(--tw-text-opacity,1))}.text-md-primary{--tw-text-opacity:1;color:rgb(26 115 232/var(--tw-text-opacity,1))}.text-md-secondary{--tw-text-opacity:1;color:rgb(95 99 104/var(--tw-text-opacity,1))}.text-md-success{--tw-text-opacity:1;color:rgb(24 128 56/var(--tw-text-opacity,1))}.text-md-text{--tw-text-opacity:1;color:rgb(32 33 36/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.accent-\[\#1A73E8\]{accent-color:#1a73e8}.opacity-65{opacity:.65}.shadow-md-float{--tw-shadow:0 1px 2px rgba(60,64,67,.12),0 2px 6px rgba(60,64,67,.08);--tw-shadow-colored:0 1px 2px var(--tw-shadow-color),0 2px 6px var(--tw-shadow-color)}.shadow-md-float,.shadow-md-pop{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-md-pop{--tw-shadow:0 2px 6px rgba(60,64,67,.15),0 6px 16px rgba(60,64,67,.1);--tw-shadow-colored:0 2px 6px var(--tw-shadow-color),0 6px 16px var(--tw-shadow-color)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-200{transition-duration:.2s}.hover\:border-gray-300:hover{--tw-border-opacity:1;border-color:rgb(209 213 219/var(--tw-border-opacity,1))}.hover\:\!bg-red-50:hover{--tw-bg-opacity:1!important;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))!important}.hover\:bg-black:hover{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity,1))}.hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254/var(--tw-bg-opacity,1))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1))}.hover\:bg-md-container:hover{--tw-bg-opacity:1;background-color:rgb(241 243 244/var(--tw-bg-opacity,1))}.hover\:bg-md-primaryContainer:hover{--tw-bg-opacity:1;background-color:rgb(232 240 254/var(--tw-bg-opacity,1))}.hover\:bg-md-primaryHover:hover{--tw-bg-opacity:1;background-color:rgb(21 87 176/var(--tw-bg-opacity,1))}.hover\:bg-md-surface:hover{--tw-bg-opacity:1;background-color:rgb(248 249 250/var(--tw-bg-opacity,1))}.hover\:bg-red-50:hover{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.hover\:\!text-md-danger:hover{--tw-text-opacity:1!important;color:rgb(217 48 37/var(--tw-text-opacity,1))!important}.hover\:text-md-danger:hover{--tw-text-opacity:1;color:rgb(217 48 37/var(--tw-text-opacity,1))}.hover\:text-md-primary:hover{--tw-text-opacity:1;color:rgb(26 115 232/var(--tw-text-opacity,1))}.hover\:text-md-text:hover{--tw-text-opacity:1;color:rgb(32 33 36/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.focus\:border-md-primary:focus{--tw-border-opacity:1;border-color:rgb(26 115 232/var(--tw-border-opacity,1))}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.disabled\:opacity-25:disabled{opacity:.25}.disabled\:opacity-30:disabled{opacity:.3}.disabled\:opacity-35:disabled{opacity:.35}@media (min-width:640px){.sm\:block{display:block}.sm\:w-32{width:8rem}.sm\:max-w-\[300px\]{max-width:300px}.sm\:flex-row{flex-direction:row}.sm\:gap-2{gap:.5rem}.sm\:gap-3{gap:.75rem}.sm\:border-l{border-left-width:1px}.sm\:border-t-0{border-top-width:0}}@media (min-width:768px){.md\:inline{display:inline}}@media (min-width:1024px){.lg\:relative{position:relative}.lg\:inline{display:inline}.lg\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}}@media (min-width:1280px){.xl\:inline{display:inline}}</style>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #FFFFFF;
+      color: #202124;
+      -webkit-font-smoothing: antialiased;
+      user-select: none;
+      -webkit-user-select: none;
+      overscroll-behavior: none;
+    }
+    input, textarea, select {
+      user-select: text;
+      -webkit-user-select: text;
+    }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
+
+    /* スクロールバー（ライト・控えめ） */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #DADCE0; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #BDC1C6; }
+
+    /* CAD キャンバス（ブラウザ標準ジェスチャー完全抑止） */
+    canvas#cadCanvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      touch-action: none;
+      -webkit-touch-callout: none;
+    }
+
+    /* Material Design 3 状態クラス */
+    .md-rail-btn {
+      color: #5F6368;
+      transition: background-color 140ms ease, color 140ms ease;
+    }
+    .md-rail-btn:hover:not(:disabled) {
+      background-color: #F1F3F4;
+      color: #202124;
+    }
+    .md-rail-btn.active {
+      background-color: #E8F0FE;
+      color: #174EA6;
+    }
+    .md-seg-btn {
+      color: #5F6368;
+      transition: background-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
+    }
+    .md-seg-btn:hover {
+      color: #202124;
+    }
+    .md-seg-btn.active {
+      background-color: #FFFFFF;
+      color: #174EA6;
+      box-shadow: 0 1px 2px rgba(60,64,67,0.14);
+    }
+    .md-tab-btn {
+      color: #5F6368;
+      border-bottom: 2px solid transparent;
+      transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease;
+    }
+    .md-tab-btn:hover {
+      color: #202124;
+      background-color: #F8F9FA;
+    }
+    .md-tab-btn.active {
+      color: #1A73E8;
+      border-bottom-color: #1A73E8;
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Material スライダー */
+    input[type="range"].md-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 4px;
+      border-radius: 999px;
+      background: #E0E3E7;
+      outline: none;
+    }
+    input[type="range"].md-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #1A73E8;
+      cursor: pointer;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 1px 3px rgba(60,64,67,0.35);
+    }
+  </style>
+</head>
+<body class="font-sans text-md-text flex flex-col h-screen w-screen overflow-hidden">
+
+  <!-- ==================== トップアプリバー (高さ52px) ==================== -->
+  <header class="h-[52px] bg-white border-b border-md-border px-3 flex items-center justify-between gap-2 shrink-0 z-30">
+    <!-- 左：ブランドロゴ + フロア切替セグメント -->
+    <div class="flex items-center gap-3 min-w-0">
+      <div class="flex items-center gap-2 shrink-0">
+        <div class="w-8 h-8 rounded-lg bg-md-primaryContainer text-md-primary flex items-center justify-center">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v14a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h6a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4z" />
+          </svg>
+        </div>
+        <div class="hidden sm:block leading-tight">
+          <div class="text-[13px] font-semibold text-md-text tracking-tight">ArchiZone Bridge</div>
+          <div class="text-[10px] text-md-secondary">Archicad AI ゾーニングCAD</div>
+        </div>
+      </div>
+
+      <div class="h-5 w-px bg-md-border shrink-0 hidden sm:block"></div>
+
+      <!-- フロア切替セグメント + 追加・設定ポップオーバー -->
+      <div class="flex items-center gap-1 min-w-0">
+        <div id="floorSegmentContainer" class="flex items-center bg-md-container p-0.5 rounded-lg overflow-x-auto no-scrollbar max-w-[210px] sm:max-w-[300px]">
+          <!-- JSで動的にフロアボタンを生成 -->
+        </div>
+        <button id="btnAddFloorQuick" class="w-7 h-7 rounded-lg hover:bg-md-container text-md-secondary hover:text-md-text flex items-center justify-center shrink-0 transition-colors" title="上階フロアを追加">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-7-7h14"/></svg>
+        </button>
+        <div class="relative shrink-0">
+          <button id="btnFloorPopover" class="h-7 px-2 rounded-lg hover:bg-md-container text-xs font-medium text-md-secondary hover:text-md-text flex items-center gap-1 transition-colors" title="フロア高さ・名称・削除を設定">
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            <span class="hidden md:inline">階高設定</span>
+          </button>
+          <!-- フロア設定ポップオーバー -->
+          <div id="floorPopover" class="hidden absolute left-0 top-9 w-[340px] bg-white border border-md-border rounded-xl shadow-md-pop p-3 z-50">
+            <div class="flex items-center justify-between mb-2 pb-2 border-b border-md-border">
+              <span class="text-xs font-semibold text-md-text">フロア構成・基準レベル</span>
+              <button id="btnAddFloorInPop" class="text-[11px] font-medium text-md-primary hover:underline">+ 階を追加</button>
+            </div>
+            <div id="floorPopoverList" class="space-y-2 max-h-64 overflow-y-auto pr-0.5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 右：単位切替 + スナップ設定ポップオーバー + テスト実行 + プライマリ「JSONコピー」 + ドロワー切替 -->
+    <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+      <!-- 単位切替 (mm / m) -->
+      <div class="flex items-center bg-md-container p-0.5 rounded-lg" title="表示およびJSON出力の単位を切替">
+        <button id="unitMmBtn" class="md-seg-btn active px-2 py-1 rounded-md text-[11px] font-mono font-semibold">mm</button>
+        <button id="unitMBtn" class="md-seg-btn px-2 py-1 rounded-md text-[11px] font-mono font-semibold">m</button>
+      </div>
+
+      <!-- スナップ＆表示設定ポップオーバー -->
+      <div class="relative">
+        <button id="btnSnapPopover" class="h-8 px-2.5 rounded-lg border border-md-border bg-white hover:bg-md-surface text-xs font-medium text-md-text flex items-center gap-1.5 transition-colors">
+          <svg class="w-4 h-4 text-md-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16M4 16h16M8 4v16M16 4v16"/></svg>
+          <span class="hidden lg:inline">スナップ・表示</span>
+          <span id="snapSummaryPill" class="font-mono text-[10px] text-md-secondary">910</span>
+        </button>
+
+        <div id="snapPopover" class="hidden absolute right-0 top-10 w-72 bg-white border border-md-border rounded-xl shadow-md-pop p-3.5 z-50 space-y-3">
+          <div class="text-xs font-semibold text-md-text">グリッド・スナップ設定</div>
+          <div>
+            <label class="block text-[11px] text-md-secondary mb-1">グリッド間隔 (モジュール)</label>
+            <div class="grid grid-cols-5 gap-1">
+              <button data-grid-mm="100" class="grid-opt-btn py-1 rounded-md border border-md-border text-[11px] font-mono hover:bg-md-surface">100</button>
+              <button data-grid-mm="455" class="grid-opt-btn py-1 rounded-md border border-md-border text-[11px] font-mono hover:bg-md-surface">455</button>
+              <button data-grid-mm="500" class="grid-opt-btn py-1 rounded-md border border-md-border text-[11px] font-mono hover:bg-md-surface">500</button>
+              <button data-grid-mm="910" class="grid-opt-btn py-1 rounded-md border border-md-border text-[11px] font-mono hover:bg-md-surface">910</button>
+              <button data-grid-mm="1000" class="grid-opt-btn py-1 rounded-md border border-md-border text-[11px] font-mono hover:bg-md-surface">1000</button>
+            </div>
+          </div>
+
+          <div class="space-y-2 pt-1 border-t border-md-border text-xs">
+            <label class="flex items-center justify-between cursor-pointer py-0.5">
+              <span class="text-md-text">グリッドスナップ <span class="text-[10px] text-md-muted font-mono">(G)</span></span>
+              <input id="chkSnapGrid" type="checkbox" checked class="w-4 h-4 accent-[#1A73E8] rounded" />
+            </label>
+            <label class="flex items-center justify-between cursor-pointer py-0.5">
+              <span class="text-md-text">頂点スナップ <span class="text-[10px] text-md-muted font-mono">(M)</span></span>
+              <input id="chkSnapVertex" type="checkbox" checked class="w-4 h-4 accent-[#1A73E8] rounded" />
+            </label>
+            <label class="flex items-center justify-between cursor-pointer py-0.5">
+              <span class="text-md-text">辺（エッジ）スナップ</span>
+              <input id="chkSnapEdge" type="checkbox" checked class="w-4 h-4 accent-[#1A73E8] rounded" />
+            </label>
+          </div>
+
+          <div class="space-y-2 pt-2 border-t border-md-border text-xs">
+            <div class="text-[11px] font-semibold text-md-secondary">図面表示レイヤー</div>
+            <label class="flex items-center justify-between cursor-pointer py-0.5">
+              <span class="text-md-text">下階オニオンスキン参照 <span class="text-[10px] text-md-muted font-mono">(O)</span></span>
+              <input id="chkOnionSkin" type="checkbox" checked class="w-4 h-4 accent-[#1A73E8] rounded" />
+            </label>
+            <label class="flex items-center justify-between cursor-pointer py-0.5">
+              <span class="text-md-text">共有壁プレビュー (derivedWalls)</span>
+              <input id="chkWallPreview" type="checkbox" class="w-4 h-4 accent-[#1A73E8] rounded" />
+            </label>
+            <label class="flex items-center justify-between cursor-pointer py-0.5">
+              <span class="text-md-text">辺の寸法・ゾーンラベル</span>
+              <input id="chkShowDims" type="checkbox" checked class="w-4 h-4 accent-[#1A73E8] rounded" />
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 出力テスト実行ボタン + 結果バッジ -->
+      <button id="btnRunTestsTop" class="h-8 px-2.5 rounded-lg border border-md-border bg-white hover:bg-md-surface text-xs font-medium text-md-text flex items-center gap-1.5 transition-colors" title="幾何エンジンとJSON出力の自動検証テストを実行">
+        <span id="topTestDot" class="w-2 h-2 rounded-full bg-md-success"></span>
+        <span class="hidden md:inline">出力テスト</span>
+        <span id="topTestBadge" class="font-mono text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-50 text-md-success font-semibold tabular-nums">7/7</span>
+      </button>
+
+      <!-- プライマリボタン：JSONコピー -->
+      <button id="btnCopyJsonTop" class="h-8 px-3 rounded-lg bg-md-primary hover:bg-md-primaryHover text-white text-xs font-medium flex items-center gap-1.5 shadow-sm transition-colors">
+        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        <span>JSONコピー</span>
+      </button>
+
+      <!-- 右インスペクター開閉ボタン -->
+      <button id="btnToggleDrawer" class="w-8 h-8 rounded-lg border border-md-border bg-white hover:bg-md-surface text-md-secondary hover:text-md-text flex items-center justify-center transition-colors" title="インスペクターパネルを開閉">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== メインワークスペース ==================== -->
+  <div class="flex-1 flex min-h-0 relative overflow-hidden bg-white">
+
+    <!-- キャンバス領域 -->
+    <main id="canvasContainer" class="flex-1 relative overflow-hidden bg-white">
+      <canvas id="cadCanvas"></canvas>
+
+      <!-- 左フローティングツールレール（クリーンな白ピル型） -->
+      <aside class="absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-white border border-md-border rounded-2xl shadow-md-float p-1.5 flex flex-col items-center gap-1">
+        <button data-tool="select" class="md-rail-btn active w-10 h-10 rounded-xl flex items-center justify-center" title="選択・移動・頂点/辺編集 (V)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.9"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3l14 9-6.5 1.5L10 20 5 3z"/></svg>
+        </button>
+        <button data-tool="rect" class="md-rail-btn w-10 h-10 rounded-xl flex items-center justify-center" title="矩形ゾーン作図 (R)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.9"><rect x="4" y="5" width="16" height="14" rx="1.5"/></svg>
+        </button>
+        <button data-tool="polygon" class="md-rail-btn w-10 h-10 rounded-xl flex items-center justify-center" title="ポリゴン(多角形)ゾーン作図 (P)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.9"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19V5h8v6h6v8H5z"/></svg>
+        </button>
+        <button data-tool="site" class="md-rail-btn w-10 h-10 rounded-xl flex items-center justify-center" title="敷地境界(Site)作図 (S)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.9" stroke-dasharray="3 2"><polygon points="4,18 6,6 19,4 20,19"/></svg>
+        </button>
+
+        <div class="w-6 h-px bg-md-border my-0.5"></div>
+
+        <button id="btnUndo" class="md-rail-btn w-10 h-10 rounded-xl flex items-center justify-center disabled:opacity-35" title="元に戻す (Ctrl+Z)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.9"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h10a5 5 0 015 5v2M3 10l5-5M3 10l5 5"/></svg>
+        </button>
+        <button id="btnRedo" class="md-rail-btn w-10 h-10 rounded-xl flex items-center justify-center disabled:opacity-35" title="やり直し (Ctrl+Y)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.9"><path stroke-linecap="round" stroke-linejoin="round" d="M21 10H11a5 5 0 00-5 5v2M21 10l-5-5M21 10l-5 5"/></svg>
+        </button>
+        <button id="btnFitView" class="md-rail-btn w-10 h-10 rounded-xl flex items-center justify-center" title="全体表示にフィット (F)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.9"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4"/></svg>
+        </button>
+
+        <div class="w-6 h-px bg-md-border my-0.5"></div>
+
+        <button id="btnDuplicate" class="md-rail-btn w-10 h-10 rounded-xl flex items-center justify-center disabled:opacity-30" title="選択ゾーンを複製 (Ctrl+D)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="11" height="11" rx="1.5"/><path d="M16 8V5.5A1.5 1.5 0 0014.5 4h-9A1.5 1.5 0 004 5.5v9A1.5 1.5 0 005.5 16H8"/></svg>
+        </button>
+        <button id="btnDelete" class="md-rail-btn w-10 h-10 rounded-xl flex items-center justify-center hover:!text-md-danger hover:!bg-red-50 disabled:opacity-30" title="選択要素または頂点を削除 (Delete)">
+          <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+        </button>
+      </aside>
+
+      <!-- 作図ガイド・ステータスチップ（左上・必要時のみ控えめに表示） -->
+      <div id="drawingHintPill" class="hidden absolute top-3 left-16 z-20 bg-white/95 border border-md-border rounded-full shadow-md-float px-3.5 py-1.5 text-xs text-md-text flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-md-primary"></span>
+        <span id="drawingHintText">クリックで頂点追加 / 始点クリック・Enterで閉じる / Shiftで0°・45°・90°固定 / Escで中止</span>
+        <button id="btnFinishPolyHint" class="hidden ml-1 px-2 py-0.5 rounded-full bg-md-primary text-white text-[11px] font-medium">完了</button>
+        <button id="btnCancelPolyHint" class="ml-0.5 text-md-secondary hover:text-md-text text-[11px]">✕</button>
+      </div>
+
+      <!-- iPad専用：移動 / 拡大縮小 / 編集の厳密分離セグメントバー（iPadモード時のみ表示） -->
+      <div id="ipadModeBar" class="hidden absolute bottom-[62px] left-1/2 -translate-x-1/2 z-20 bg-white border border-md-border rounded-2xl shadow-md-pop p-1.5 flex flex-col sm:flex-row items-center gap-2 max-w-[95vw]">
+        <div class="flex items-center bg-md-container p-1 rounded-xl gap-1">
+          <button data-ipad-mode="edit" class="ipad-mode-btn md-seg-btn active px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+            編集 / 作図
+          </button>
+          <button data-ipad-mode="pan" class="ipad-mode-btn md-seg-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 11V6a1 1 0 112 0v4m0-5a1 1 0 112 0v5m0-4a1 1 0 112 0v4m0-3a1 1 0 112 0v6a5 5 0 01-5 5H9a5 5 0 01-5-5v-3a1 1 0 112 0v2"/></svg>
+            移動 (Pan)
+          </button>
+          <button data-ipad-mode="zoom" class="ipad-mode-btn md-seg-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 8v6m-3-3h6"/></svg>
+            拡大縮小 (Zoom)
+          </button>
+        </div>
+
+        <!-- Zoomモード選択時のみ表示される専用ズームコントローラ -->
+        <div id="ipadZoomControls" class="hidden flex items-center gap-2 px-2 py-1 border-t sm:border-t-0 sm:border-l border-md-border">
+          <button id="ipadZoomOutBtn" class="w-8 h-8 rounded-lg bg-md-container hover:bg-gray-200 text-md-text font-bold text-base flex items-center justify-center" title="縮小">−</button>
+          <input id="ipadZoomSlider" type="range" min="-200" max="200" value="0" class="md-slider w-28 sm:w-32" aria-label="ズーム倍率スライダー" />
+          <button id="ipadZoomInBtn" class="w-8 h-8 rounded-lg bg-md-container hover:bg-gray-200 text-md-text font-bold text-base flex items-center justify-center" title="拡大">+</button>
+        </div>
+      </div>
+
+      <!-- キャンバス下部フローティングバー（座標 + PC/iPad切替 + ズーム倍率） -->
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 bg-white/95 backdrop-blur-sm border border-md-border rounded-full shadow-md-float px-3 py-1 flex items-center gap-2.5 sm:gap-3 text-xs max-w-[95vw]">
+        <!-- カーソルCAD座標 -->
+        <div class="flex items-center gap-2 font-mono text-[11px] tabular-nums shrink-0">
+          <span class="flex items-center gap-1">
+            <span class="text-md-danger font-semibold">X</span>
+            <span id="statusX" class="w-14 text-right text-md-text">0</span>
+          </span>
+          <span class="flex items-center gap-1">
+            <span class="text-md-success font-semibold">Y</span>
+            <span id="statusY" class="w-14 text-right text-md-text">0</span>
+          </span>
+          <span id="statusUnit" class="text-md-muted">mm</span>
+        </div>
+
+        <div class="h-3.5 w-px bg-md-border shrink-0"></div>
+
+        <!-- デバイス操作モード切替 (PC / iPad) -->
+        <div class="flex items-center bg-md-container p-0.5 rounded-full shrink-0" title="PC(トラックパッド2本指パン+ピンチズーム) / iPad(移動・ズーム分離)を切替">
+          <button id="btnDevicePC" class="md-seg-btn active px-2.5 py-0.5 rounded-full text-[11px] font-medium">PC</button>
+          <button id="btnDeviceIPad" class="md-seg-btn px-2.5 py-0.5 rounded-full text-[11px] font-medium">iPad</button>
+        </div>
+
+        <div class="h-3.5 w-px bg-md-border shrink-0"></div>
+
+        <!-- ズーム倍率＆リセット -->
+        <button id="btnZoomReset" class="font-mono text-[11px] text-md-secondary hover:text-md-primary tabular-nums px-1.5 py-0.5 rounded hover:bg-md-container transition-colors shrink-0" title="クリックで全体フィットにリセット">
+          <span id="statusZoom">100%</span>
+        </button>
+
+        <!-- PC操作ヒント（ワイド画面のみ控えめに表示） -->
+        <span id="pcGestureHint" class="hidden xl:inline text-[10px] text-md-muted border-l border-md-border pl-2.5 whitespace-nowrap">
+          2本指スライド: 移動 / ピンチ: 拡大縮小
+        </span>
+      </div>
+    </main>
+
+    <!-- ==================== 右インスペクタードロワー (幅340px・折りたたみ可能) ==================== -->
+    <aside id="rightDrawer" class="w-[340px] max-w-[90vw] bg-white border-l border-md-border flex flex-col shrink-0 z-20 transition-all duration-200 absolute lg:relative right-0 top-0 bottom-0 shadow-md-pop lg:shadow-none">
+      <!-- Material Design タブバー -->
+      <div class="h-10 border-b border-md-border flex shrink-0 bg-white">
+        <button id="tabBtnProps" class="md-tab-btn active flex-1 text-xs font-semibold">プロパティ</button>
+        <button id="tabBtnJson" class="md-tab-btn flex-1 text-xs font-semibold">JSON連携</button>
+        <button id="tabBtnTests" class="md-tab-btn flex-1 text-xs font-semibold flex items-center justify-center gap-1">
+          <span>検証テスト</span>
+          <span id="tabTestCount" class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-50 text-md-success">7/7</span>
+        </button>
+      </div>
+
+      <!-- タブ1: プロパティ（未選択時はプロジェクト概要＆ゾーン一覧） -->
+      <div id="tabPanelProps" class="flex-1 overflow-y-auto p-3.5 space-y-3.5 text-xs bg-white"></div>
+
+      <!-- タブ2: JSON連携（双方向エクスポート＆インポート） -->
+      <div id="tabPanelJson" class="hidden flex-1 flex flex-col min-h-0 p-3.5 gap-3 text-xs bg-white">
+        <div class="bg-md-surface border border-md-border rounded-xl p-3 space-y-2.5 shrink-0">
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-md-text">Archicad AI 連携出力</span>
+            <span id="derivedWallBadge" class="font-mono text-[10px] px-2 py-0.5 rounded-full bg-md-primaryContainer text-md-onPrimaryContainer font-medium">0 壁</span>
+          </div>
+          <p class="text-[11px] text-md-secondary leading-relaxed">
+            右手座標系(+X右/+Y上)・CCW正規化済みの全ゾーンと、共有境界を区間分割マージした <code class="font-mono text-md-text">derivedWalls</code> を出力します。
+          </p>
+          <div class="grid grid-cols-2 gap-2">
+            <button id="btnCopyJsonDrawer" class="h-8 px-2.5 rounded-lg bg-md-primary hover:bg-md-primaryHover text-white font-medium flex items-center justify-center gap-1.5 transition-colors">
+              JSONコピー
+            </button>
+            <button id="btnDownloadJson" class="h-8 px-2.5 rounded-lg border border-md-border bg-white hover:bg-md-container text-md-text font-medium flex items-center justify-center gap-1.5 transition-colors">
+              .json保存
+            </button>
+          </div>
+          <button id="btnCopyAiPrompt" class="w-full h-8 px-3 rounded-lg bg-md-primaryContainer hover:bg-blue-100 text-md-onPrimaryContainer font-semibold flex items-center justify-center gap-1.5 transition-colors">
+            AI指示プロンプト付きでコピー
+          </button>
+        </div>
+
+        <div class="flex-1 flex flex-col min-h-0 gap-1.5">
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-md-text text-[11px]">JSONエディタ（貼り付けて双方向反映可）</span>
+            <span id="jsonSyncBadge" class="text-[10px] font-mono text-md-success">同期済み</span>
+          </div>
+          <textarea id="jsonEditor" spellcheck="false" class="flex-1 w-full bg-md-surface border border-md-border rounded-xl p-2.5 font-mono text-[11px] leading-relaxed text-md-text focus:outline-none focus:border-md-primary focus:bg-white resize-none"></textarea>
+          <div id="jsonErrorBox" class="hidden bg-red-50 border border-red-200 text-md-danger rounded-lg px-2.5 py-2 text-[11px] leading-snug"></div>
+          <div class="flex gap-2 shrink-0">
+            <button id="btnImportJson" class="flex-1 h-8 rounded-lg bg-md-text hover:bg-black text-white font-medium transition-colors">
+              JSONから図面を再構築
+            </button>
+            <button id="btnRefreshJson" class="h-8 px-3 rounded-lg border border-md-border bg-white hover:bg-md-surface text-md-secondary text-[11px] font-medium">
+              最新化
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- タブ3: 自動検証テストスイート -->
+      <div id="tabPanelTests" class="hidden flex-1 flex flex-col min-h-0 p-3.5 gap-3 text-xs bg-white">
+        <div class="bg-md-surface border border-md-border rounded-xl p-3 flex items-center justify-between gap-2 shrink-0">
+          <div>
+            <div class="font-semibold text-md-text flex items-center gap-1.5">
+              自動検証テストスイート
+            </div>
+            <div id="testSummaryText" class="text-[11px] text-md-secondary mt-0.5 tabular-nums">検証準備中...</div>
+          </div>
+          <button id="btnRerunTests" class="h-8 px-3 rounded-lg bg-md-primary hover:bg-md-primaryHover text-white text-xs font-medium shrink-0 transition-colors">
+            再実行
+          </button>
+        </div>
+        <div id="testResultsList" class="flex-1 overflow-y-auto space-y-2 pr-0.5"></div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ==================== トースト通知コンテナ ==================== -->
+  <div id="toastContainer" class="fixed top-16 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-1.5 pointer-events-none"></div>
+
+  <!-- ==================== アプリケーションロジック ==================== -->
+  <script>
+    (() => {
+      'use strict';
+
+      /* =========================================================================
+       * 1. 定数・落ち着いたパステル建築ゾーニングカラーパレット・ユーティリティ
+       * ========================================================================= */
+      const TSUBO_SQM = 3.305785124;
+
+      // 白背景に映える落ち着いた建築図面向け8カテゴリパレット
+      const ZONE_CATEGORIES = {
+        Living:      { label: 'リビング・居室', fill: '#FEF3C7', stroke: '#D97706' },
+        Wet:         { label: '水回り',         fill: '#E0F2FE', stroke: '#0284C7' },
+        Circulation: { label: '動線・階段',     fill: '#F1F5F9', stroke: '#64748B' },
+        Storage:     { label: '収納・WIC',      fill: '#EDE9FE', stroke: '#7C3AED' },
+        Entrance:    { label: 'エントランス',   fill: '#FFEDD5', stroke: '#EA580C' },
+        Work:        { label: 'ワーク・書斎',   fill: '#DCFCE7', stroke: '#16A34A' },
+        Exterior:    { label: '外部・テラス',   fill: '#ECFCCB', stroke: '#65A30D' },
+        Other:       { label: 'その他',         fill: '#FCE7F3', stroke: '#DB2777' }
+      };
+
+      const uid = (prefix = 'id') => `${prefix}-${Math.random().toString(36).slice(2, 7)}${Date.now().toString(36).slice(-3)}`;
+
+      // 浮動小数点ゴミを発生させない精密変換（内部はmm保持）
+      const roundMm = (v) => {
+        const r = Math.round(Number(v) * 1000) / 1000;
+        return Object.is(r, -0) ? 0 : r;
+      };
+      const snapRoundMm = (v) => {
+        const r = Math.round(Number(v));
+        return Object.is(r, -0) ? 0 : r;
+      };
+      const mmToUnit = (mmVal, unit) => {
+        if (unit === 'm') {
+          const val = Number((Number(mmVal) / 1000).toFixed(4));
+          return Object.is(val, -0) ? 0 : val;
+        }
+        return roundMm(mmVal);
+      };
+      const unitToMm = (val, unit) => {
+        const n = Number(val);
+        if (!Number.isFinite(n)) return 0;
+        if (unit === 'm') return roundMm(Math.round(n * 1000000) / 1000);
+        return roundMm(n);
+      };
+      const formatLen = (mmVal, unit) => {
+        if (unit === 'm') {
+          const s = (mmVal / 1000).toFixed(3).replace(/\.?0+$/, '');
+          return `${s === '-0' ? '0' : s}m`;
+        }
+        return `${Math.round(mmVal).toLocaleString()}mm`;
+      };
+      const formatCoord = (mmVal, unit) => {
+        if (unit === 'm') return (mmVal / 1000).toFixed(3);
+        return String(Math.round(mmVal));
+      };
+      const escapeHtml = (str) => String(str ?? '')
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+      // Material Snackbar 風トースト通知（alert()は使用しない）
+      function showToast(msg, type = 'info') {
+        const container = document.getElementById('toastContainer');
+        const el = document.createElement('div');
+        const dotColor = type === 'success' ? 'bg-emerald-400' : (type === 'error' ? 'bg-red-400' : 'bg-blue-400');
+        el.className = 'bg-[#202124] text-white px-4 py-2 rounded-full shadow-md-pop text-xs font-medium flex items-center gap-2 transition-all duration-200';
+        el.innerHTML = `<span class="w-2 h-2 rounded-full ${dotColor} shrink-0"></span><span>${escapeHtml(msg)}</span>`;
+        container.appendChild(el);
+        setTimeout(() => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(-4px)';
+          setTimeout(() => el.remove(), 200);
+        }, 2400);
+      }
+
+      // 安全なクリップボードコピー
+      function copyTextToClipboard(text, successMsg) {
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          const ok = document.execCommand('copy');
+          document.body.removeChild(ta);
+          if (ok) {
+            showToast(successMsg, 'success');
+            return;
+          }
+        } catch (err) {
+          console.warn('execCommand fallback:', err);
+        }
+        if (navigator.clipboard?.writeText) {
+          navigator.clipboard.writeText(text)
+            .then(() => showToast(successMsg, 'success'))
+            .catch(() => showToast('コピーできませんでした。JSONエディタから手動でコピーしてください。', 'error'));
+        } else {
+          showToast('コピーできませんでした。', 'error');
+        }
+      }
+
+      /* =========================================================================
+       * 2. 純粋関数CAD幾何エンジン（ユニットテストから直接呼び出し可能）
+       * ========================================================================= */
+      const CadEngine = {
+        // 画面座標 ⇔ CAD右手座標系(+X右, +Y上) 変換
+        cadToScreen(wx, wy, view) {
+          return {
+            x: wx * view.scale + view.panX,
+            y: view.panY - wy * view.scale
+          };
+        },
+
+        screenToCad(sx, sy, view) {
+          return {
+            x: (sx - view.panX) / view.scale,
+            y: (view.panY - sy) / view.scale
+          };
+        },
+
+        // 指定スクリーン座標 (anchorSx, anchorSy) のCADワールド座標を不変に保ちながらズーム
+        zoomAtScreenPoint(view, anchorSx, anchorSy, targetScale, minScale = 0.004, maxScale = 1.2) {
+          const clamped = Math.max(minScale, Math.min(maxScale, targetScale));
+          const cadBefore = this.screenToCad(anchorSx, anchorSy, view);
+          return {
+            scale: clamped,
+            panX: anchorSx - cadBefore.x * clamped,
+            panY: anchorSy + cadBefore.y * clamped
+          };
+        },
+
+        // 符号付き面積の2倍（右手座標系では >0 が反時計回り CCW）
+        signedArea2(pts) {
+          if (!pts || pts.length < 3) return 0;
+          let sum = 0;
+          for (let i = 0; i < pts.length; i++) {
+            const a = pts[i];
+            const b = pts[(i + 1) % pts.length];
+            sum += a.x * b.y - b.x * a.y;
+          }
+          return sum;
+        },
+
+        // ポリゴンをCCW（反時計回り）へ自動正規化し連続重複頂点を除去
+        normalizeCCW(pts) {
+          const out = [];
+          for (const raw of pts || []) {
+            const p = { x: roundMm(raw.x), y: roundMm(raw.y) };
+            const prev = out[out.length - 1];
+            if (!prev || Math.hypot(p.x - prev.x, p.y - prev.y) > 0.5) {
+              out.push(p);
+            }
+          }
+          if (out.length > 1 && Math.hypot(out[0].x - out[out.length - 1].x, out[0].y - out[out.length - 1].y) <= 0.5) {
+            out.pop();
+          }
+          if (out.length >= 3 && this.signedArea2(out) < 0) {
+            out.reverse();
+          }
+          return out;
+        },
+
+        areaMm2(pts) {
+          return Math.abs(this.signedArea2(pts)) / 2;
+        },
+
+        areaSqm(pts) {
+          return this.areaMm2(pts) / 1_000_000;
+        },
+
+        perimeterMm(pts) {
+          if (!pts || pts.length < 2) return 0;
+          let sum = 0;
+          for (let i = 0; i < pts.length; i++) {
+            const a = pts[i], b = pts[(i + 1) % pts.length];
+            sum += Math.hypot(b.x - a.x, b.y - a.y);
+          }
+          return sum;
+        },
+
+        boundingBox(pts) {
+          if (!pts || pts.length === 0) return { minX: 0, minY: 0, maxX: 0, maxY: 0, width: 0, depth: 0 };
+          let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+          for (const p of pts) {
+            if (p.x < minX) minX = p.x;
+            if (p.y < minY) minY = p.y;
+            if (p.x > maxX) maxX = p.x;
+            if (p.y > maxY) maxY = p.y;
+          }
+          return {
+            minX: roundMm(minX), minY: roundMm(minY),
+            maxX: roundMm(maxX), maxY: roundMm(maxY),
+            width: roundMm(maxX - minX), depth: roundMm(maxY - minY)
+          };
+        },
+
+        pointInPolygon(pt, pts) {
+          let inside = false;
+          for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+            const xi = pts[i].x, yi = pts[i].y;
+            const xj = pts[j].x, yj = pts[j].y;
+            const intersect = ((yi > pt.y) !== (yj > pt.y)) &&
+              (pt.x < ((xj - xi) * (pt.y - yi)) / ((yj - yi) || 1e-12) + xi);
+            if (intersect) inside = !inside;
+          }
+          return inside;
+        },
+
+        closestPointOnSegment(p, a, b) {
+          const dx = b.x - a.x, dy = b.y - a.y;
+          const len2 = dx * dx + dy * dy;
+          if (len2 < 1e-9) return { x: a.x, y: a.y, dist: Math.hypot(p.x - a.x, p.y - a.y), t: 0 };
+          const t = Math.max(0, Math.min(1, ((p.x - a.x) * dx + (p.y - a.y) * dy) / len2));
+          const cx = a.x + t * dx, cy = a.y + t * dy;
+          return { x: cx, y: cy, dist: Math.hypot(p.x - cx, p.y - cy), t };
+        },
+
+        // ポリゴンの自己交差判定（検証テスト用）
+        hasSelfIntersection(pts) {
+          if (!pts || pts.length < 4) return false;
+          const n = pts.length;
+          const ccw = (A, B, C) => (C.y - A.y) * (B.x - A.x) - (B.y - A.y) * (C.x - A.x);
+          const segmentsCrossProperly = (a, b, c, d) => {
+            const eps = 1e-4;
+            const d1 = ccw(a, b, c);
+            const d2 = ccw(a, b, d);
+            const d3 = ccw(c, d, a);
+            const d4 = ccw(c, d, b);
+            if (((d1 > eps && d2 < -eps) || (d1 < -eps && d2 > eps)) &&
+                ((d3 > eps && d4 < -eps) || (d3 < -eps && d4 > eps))) {
+              return true;
+            }
+            return false;
+          };
+          for (let i = 0; i < n; i++) {
+            const a = pts[i], b = pts[(i + 1) % n];
+            for (let j = i + 2; j < n; j++) {
+              if (i === 0 && j === n - 1) continue; // 隣接辺は除外
+              const c = pts[j], d = pts[(j + 1) % n];
+              if (segmentsCrossProperly(a, b, c, d)) return true;
+            }
+          }
+          return false;
+        },
+
+        // 軸平行矩形かどうか判定
+        isAxisAlignedRect(pts) {
+          if (!pts || pts.length !== 4) return false;
+          const bb = this.boundingBox(pts);
+          if (bb.width < 1 || bb.depth < 1) return false;
+          const corners = [
+            { x: bb.minX, y: bb.minY }, { x: bb.maxX, y: bb.minY },
+            { x: bb.maxX, y: bb.maxY }, { x: bb.minX, y: bb.maxY }
+          ];
+          return corners.every(c => pts.some(p => Math.hypot(p.x - c.x, p.y - c.y) <= 1.0));
+        },
+
+        // 凹多角形でも必ず内部に来るラベル配置点
+        labelPoint(pts) {
+          if (!pts || pts.length < 3) return { x: 0, y: 0 };
+          let cx = 0, cy = 0, a2 = 0;
+          for (let i = 0; i < pts.length; i++) {
+            const p0 = pts[i], p1 = pts[(i + 1) % pts.length];
+            const cross = p0.x * p1.y - p1.x * p0.y;
+            a2 += cross;
+            cx += (p0.x + p1.x) * cross;
+            cy += (p0.y + p1.y) * cross;
+          }
+          if (Math.abs(a2) > 1e-6) {
+            const c = { x: cx / (3 * a2), y: cy / (3 * a2) };
+            if (this.pointInPolygon(c, pts)) return c;
+          }
+          const bb = this.boundingBox(pts);
+          let best = { x: (bb.minX + bb.maxX) / 2, y: (bb.minY + bb.maxY) / 2 };
+          let bestSpan = -1;
+          for (const frac of [0.5, 0.35, 0.65, 0.22, 0.78]) {
+            const y = bb.minY + bb.depth * frac;
+            const xs = [];
+            for (let i = 0; i < pts.length; i++) {
+              const a = pts[i], b = pts[(i + 1) % pts.length];
+              if ((a.y <= y && b.y > y) || (b.y <= y && a.y > y)) {
+                xs.push(a.x + ((y - a.y) * (b.x - a.x)) / (b.y - a.y));
+              }
+            }
+            xs.sort((u, v) => u - v);
+            for (let k = 0; k + 1 < xs.length; k += 2) {
+              const span = xs[k + 1] - xs[k];
+              if (span > bestSpan) {
+                bestSpan = span;
+                best = { x: (xs[k] + xs[k + 1]) / 2, y };
+              }
+            }
+          }
+          return best;
+        },
+
+        // 区間分割による厳密な共有壁マージアルゴリズム（T-junction・部分重複対応）
+        computeDerivedWallsForFloor(floor, floorZones) {
+          const walls = [];
+          const DIST_TOL = 1.5; // 1.5mm以内の共線辺を同一直線とみなす
+          const lineBuckets = [];
+
+          for (const z of floorZones) {
+            const verts = this.normalizeCCW(z.vertices);
+            if (verts.length < 3) continue;
+            for (let i = 0; i < verts.length; i++) {
+              const a = verts[i];
+              const b = verts[(i + 1) % verts.length];
+              const dx = b.x - a.x;
+              const dy = b.y - a.y;
+              const len = Math.hypot(dx, dy);
+              if (len < 1.0) continue;
+
+              // 正規化方向ベクトル（必ず +X優先 / +Y方向へ統一）
+              let ux = dx / len;
+              let uy = dy / len;
+              let dirSign = 1;
+              if (ux < -1e-6 || (Math.abs(ux) <= 1e-6 && uy < 0)) {
+                ux = -ux;
+                uy = -uy;
+                dirSign = -1;
+              }
+              // 原点からの符号付き法線距離 d = -uy*x + ux*y
+              const d = -uy * a.x + ux * a.y;
+              const tA = ux * a.x + uy * a.y;
+              const tB = ux * b.x + uy * b.y;
+              const tMin = Math.min(tA, tB);
+              const tMax = Math.max(tA, tB);
+
+              let bucket = lineBuckets.find(L =>
+                Math.abs(L.ux - ux) < 1e-3 &&
+                Math.abs(L.uy - uy) < 1e-3 &&
+                Math.abs(L.d - d) <= DIST_TOL
+              );
+              if (!bucket) {
+                bucket = { ux, uy, d, segments: [] };
+                lineBuckets.push(bucket);
+              }
+              bucket.segments.push({
+                tMin, tMax, dirSign,
+                zoneId: z.id,
+                height: z.height || floor.height || 2600
+              });
+            }
+          }
+
+          let seq = 1;
+          for (const L of lineBuckets) {
+            // 全端点の射影値 t を収集し重複統合して昇順ソート（これでT字接合や部分重複を完全分割）
+            const rawTs = [];
+            for (const s of L.segments) rawTs.push(s.tMin, s.tMax);
+            rawTs.sort((a, b) => a - b);
+            const ts = [];
+            for (const t of rawTs) {
+              if (ts.length === 0 || Math.abs(t - ts[ts.length - 1]) > 0.5) ts.push(t);
+            }
+
+            // 微小区間ごとに所属ゾーンを判定
+            const elementary = [];
+            for (let k = 0; k < ts.length - 1; k++) {
+              const t0 = ts[k], t1 = ts[k + 1];
+              if (t1 - t0 < 1.0) continue;
+              const tMid = (t0 + t1) / 2;
+              const covering = L.segments.filter(s => s.tMin <= tMid + 0.25 && s.tMax >= tMid - 0.25);
+              if (covering.length === 0) continue;
+
+              // ゾーンID重複除去
+              const uniqueByZone = new Map();
+              for (const c of covering) uniqueByZone.set(c.zoneId, c);
+              const adjList = Array.from(uniqueByZone.values());
+              const adjacentZoneIds = adjList.map(a => a.zoneId).sort();
+
+              // 2つ以上のゾーンで共有される区間 -> interior、単独 -> exterior
+              const type = adjacentZoneIds.length >= 2 ? 'interior' : 'exterior';
+              const heightMm = Math.max(...adjList.map(a => a.height));
+
+              elementary.push({
+                t0, t1, type, adjacentZoneIds, heightMm,
+                mergeKey: `${type}|${adjacentZoneIds.join(',')}|${heightMm}`
+              });
+            }
+
+            // 同一属性の連続区間を再統合
+            const merged = [];
+            for (const seg of elementary) {
+              const prev = merged[merged.length - 1];
+              if (prev && prev.mergeKey === seg.mergeKey && Math.abs(prev.t1 - seg.t0) <= 1.0) {
+                prev.t1 = seg.t1;
+              } else {
+                merged.push({ ...seg });
+              }
+            }
+
+            // 1D射影パラメータ t から2D座標へ逆変換
+            for (const m of merged) {
+              const sx = roundMm(L.ux * m.t0 - L.uy * L.d);
+              const sy = roundMm(L.uy * m.t0 + L.ux * L.d);
+              const ex = roundMm(L.ux * m.t1 - L.uy * L.d);
+              const ey = roundMm(L.uy * m.t1 + L.ux * L.d);
+              const lengthMm = roundMm(Math.hypot(ex - sx, ey - sy));
+              if (lengthMm < 1.0) continue;
+
+              walls.push({
+                id: `W-${floor.name}-${String(seq++).padStart(2, '0')}`,
+                type: m.type,
+                start: { x: sx, y: sy },
+                end: { x: ex, y: ey },
+                lengthMm,
+                heightMm: m.heightMm,
+                adjacentZoneIds: m.adjacentZoneIds
+              });
+            }
+          }
+          return walls;
+        },
+
+        // エクスポートJSON生成（任意のデータモデル・単位で純粋実行可能）
+        buildExportJson(model, unit) {
+          const u = unit === 'm' ? 'm' : 'mm';
+          const c = (mm) => mmToUnit(mm, u);
+          const cp = (p) => ({ x: c(p.x), y: c(p.y) });
+
+          const sortedFloors = [...model.floors].sort((a, b) => a.index - b.index);
+          const siteNorm = (model.siteBoundary && model.siteBoundary.length >= 3)
+            ? this.normalizeCCW(model.siteBoundary)
+            : [];
+
+          const floorsPayload = sortedFloors.map(f => {
+            const fZones = model.zones.filter(z => z.floorId === f.id);
+            const derivedWalls = this.computeDerivedWallsForFloor(f, fZones).map(w => ({
+              id: w.id,
+              type: w.type,
+              start: cp(w.start),
+              end: cp(w.end),
+              length: c(w.lengthMm),
+              height: c(w.heightMm),
+              adjacentZoneIds: w.adjacentZoneIds
+            }));
+
+            return {
+              id: f.id,
+              index: f.index,
+              name: f.name,
+              elevation: c(f.elevation),
+              height: c(f.height),
+              zones: fZones.map(z => {
+                const norm = this.normalizeCCW(z.vertices);
+                const bb = this.boundingBox(norm);
+                const baseOff = z.baseOffset || 0;
+                return {
+                  id: z.id,
+                  zoneNumber: z.zoneNumber || '',
+                  name: z.name || '',
+                  category: z.category || 'Other',
+                  elevation: c(f.elevation + baseOff),
+                  baseOffset: c(baseOff),
+                  height: c(z.height || f.height),
+                  areaSqm: Number(this.areaSqm(norm).toFixed(2)),
+                  perimeterM: Number((this.perimeterMm(norm) / 1000).toFixed(2)),
+                  boundingBox: {
+                    minX: c(bb.minX), minY: c(bb.minY),
+                    maxX: c(bb.maxX), maxY: c(bb.maxY),
+                    width: c(bb.width), depth: c(bb.depth)
+                  },
+                  vertices: norm.map(cp),
+                  aiNotes: z.aiNotes || ''
+                };
+              }),
+              derivedWalls
+            };
+          });
+
+          const totalIndoorSqm = model.zones
+            .filter(z => z.category !== 'Exterior')
+            .reduce((acc, z) => acc + this.areaSqm(z.vertices), 0);
+          const firstFloor = sortedFloors[0];
+          const footprintSqm = firstFloor
+            ? model.zones
+                .filter(z => z.floorId === firstFloor.id && z.category !== 'Exterior')
+                .reduce((acc, z) => acc + this.areaSqm(z.vertices), 0)
+            : 0;
+          const siteAreaSqm = siteNorm.length >= 3 ? this.areaSqm(siteNorm) : 0;
+
+          return {
+            schemaVersion: '1.1',
+            coordinateSystem: {
+              type: 'right-handed',
+              xAxis: '+X right',
+              yAxis: '+Y up',
+              polygonWinding: 'CCW'
+            },
+            unit: u,
+            project: {
+              name: model.projectName || 'Untitled Project',
+              buildingFootprintSqm: Number(footprintSqm.toFixed(2)),
+              totalFloorAreaSqm: Number(totalIndoorSqm.toFixed(2)),
+              approxBCRPercent: siteAreaSqm > 0 ? Number(((footprintSqm / siteAreaSqm) * 100).toFixed(1)) : null,
+              approxFARPercent: siteAreaSqm > 0 ? Number(((totalIndoorSqm / siteAreaSqm) * 100).toFixed(1)) : null
+            },
+            site: siteNorm.length >= 3 ? {
+              areaSqm: Number(siteAreaSqm.toFixed(2)),
+              vertices: siteNorm.map(cp)
+            } : null,
+            floors: floorsPayload
+          };
+        },
+
+        // インポートJSONパーサー（厳格な入力検証＆内部mmモデルへの復元）
+        parseImportJson(rawStr) {
+          const LIM = { bytes: 5 * 1024 * 1024, floors: 100, zones: 5000, verts: 2000, absMm: 1e8, note: 5000 };
+          if (typeof rawStr !== 'string') throw new Error('入力は文字列である必要があります。');
+          if (rawStr.length > LIM.bytes) throw new Error('JSONが大きすぎます (上限5MB)。');
+          let parsed;
+          try {
+            parsed = JSON.parse(rawStr);
+          } catch (e) {
+            throw new Error(`JSON構文エラー: ${e.message}`);
+          }
+          const isObj = (o) => o !== null && typeof o === 'object' && !Array.isArray(o);
+          if (!isObj(parsed)) throw new Error('ルートはJSONオブジェクトである必要があります。');
+          if (parsed.unit !== undefined && parsed.unit !== 'mm' && parsed.unit !== 'm') {
+            throw new Error(`unit は "mm" か "m" のみ指定できます (受信: ${String(parsed.unit).slice(0, 20)})。`);
+          }
+          const inUnit = parsed.unit === 'm' ? 'm' : 'mm';
+          const num = (v, label) => {
+            if (typeof v !== 'number' || !Number.isFinite(v)) throw new Error(`${label} は有限の数値である必要があります。`);
+            const mm = unitToMm(v, inUnit);
+            if (Math.abs(mm) > LIM.absMm) throw new Error(`${label} の値が範囲外です。`);
+            return mm;
+          };
+          const str = (v, fallback, max = 200) =>
+            (v === undefined || v === null || v === '' ? fallback : String(v)).replace(/[\u0000-\u001f\u007f]/g, ' ').slice(0, max);
+          const usedIds = new Set();
+          const safeId = (v, prefix) => {
+            let id = typeof v === 'string' && /^[A-Za-z0-9_-]{1,64}$/.test(v) ? v : uid(prefix);
+            while (usedIds.has(id)) id = uid(prefix);
+            usedIds.add(id);
+            return id;
+          };
+          const readVerts = (arr, label) => {
+            if (!Array.isArray(arr) || arr.length < 3) throw new Error(`${label} には3点以上の頂点が必要です。`);
+            if (arr.length > LIM.verts) throw new Error(`${label} の頂点数が多すぎます (上限${LIM.verts})。`);
+            const pts = arr.map((p, i) => {
+              if (!isObj(p)) throw new Error(`${label} の頂点[${i}]は {x, y} である必要があります。`);
+              return { x: num(p.x, `${label} 頂点[${i}].x`), y: num(p.y, `${label} 頂点[${i}].y`) };
+            });
+            const norm = this.normalizeCCW(pts);
+            if (!(Math.abs(this.signedArea2(norm)) > 1e-6)) throw new Error(`${label} の面積が0です。`);
+            return norm;
+          };
+
+          if (!Array.isArray(parsed.floors) || parsed.floors.length === 0) {
+            throw new Error('floors 配列に最低1つのフロアが必要です。');
+          }
+          if (parsed.floors.length > LIM.floors) throw new Error(`フロア数が多すぎます (上限${LIM.floors})。`);
+
+          const floors = [];
+          const zones = [];
+          parsed.floors.forEach((f, fIdx) => {
+            if (!isObj(f)) throw new Error(`floors[${fIdx}] はオブジェクトである必要があります。`);
+            const fId = safeId(f.id, 'floor');
+            const elev = num(f.elevation ?? (inUnit === 'm' ? fIdx * 2.8 : fIdx * 2800), `floors[${fIdx}].elevation`);
+            const height = Math.max(1000, num(f.height ?? (inUnit === 'm' ? 2.8 : 2800), `floors[${fIdx}].height`));
+            const fName = str(f.name, `${fIdx + 1}F`, 50);
+            floors.push({
+              id: fId,
+              index: Number.isFinite(f.index) ? f.index : fIdx,
+              name: fName,
+              elevation: elev,
+              height
+            });
+            if (f.zones !== undefined && !Array.isArray(f.zones)) throw new Error(`フロア ${fName} の zones は配列である必要があります。`);
+            (f.zones || []).forEach((z, zIdx) => {
+              if (!isObj(z)) throw new Error(`フロア ${fName} のゾーン[${zIdx}]はオブジェクトである必要があります。`);
+              if (zones.length >= LIM.zones) throw new Error(`ゾーン数が多すぎます (上限${LIM.zones})。`);
+              const zLabel = `フロア ${fName} のゾーン[${zIdx}]`;
+              const verts = readVerts(z.vertices, zLabel);
+              const cat = typeof z.category === 'string' && Object.prototype.hasOwnProperty.call(ZONE_CATEGORIES, z.category) ? z.category : 'Other';
+              const baseOffset = z.baseOffset !== undefined
+                ? num(z.baseOffset, `${zLabel}.baseOffset`)
+                : (z.elevation !== undefined ? roundMm(num(z.elevation, `${zLabel}.elevation`) - elev) : 0);
+              zones.push({
+                id: safeId(z.id, 'zone'),
+                zoneNumber: str(z.zoneNumber, `Z-${fIdx + 1}${String(zIdx + 1).padStart(2, '0')}`, 30),
+                name: str(z.name, `ゾーン ${zIdx + 1}`, 100),
+                category: cat,
+                floorId: fId,
+                baseOffset,
+                height: Math.max(300, num(z.height ?? (inUnit === 'm' ? 2.5 : 2500), `${zLabel}.height`)),
+                vertices: verts,
+                aiNotes: str(z.aiNotes, '', LIM.note)
+              });
+            });
+          });
+          floors.sort((a, b) => a.index - b.index);
+
+          let siteBoundary = [];
+          if (parsed.site !== undefined && parsed.site !== null) {
+            if (!isObj(parsed.site)) throw new Error('site はオブジェクトである必要があります。');
+            if (Array.isArray(parsed.site.vertices) && parsed.site.vertices.length >= 3) {
+              siteBoundary = readVerts(parsed.site.vertices, 'site.vertices');
+            }
+          }
+
+          return {
+            unit: inUnit,
+            projectName: str(parsed.project?.name, 'Imported Project', 100),
+            floors,
+            zones,
+            siteBoundary
+          };
+        }
+      };
+
+      /* =========================================================================
+       * 3. 初期サンプル住宅プラン（共有壁・T字接合を含む実用構成）
+       * ========================================================================= */
+      function createDefaultResidentialModel() {
+        return {
+          projectName: '木造2階建て住宅 ゾーニング計画 (910モジュール)',
+          floors: [
+            { id: 'floor-1f', index: 0, name: '1F', elevation: 0, height: 2800 },
+            { id: 'floor-2f', index: 1, name: '2F', elevation: 2800, height: 2700 }
+          ],
+          siteBoundary: [
+            { x: -1820, y: -2730 },
+            { x: 10920, y: -2730 },
+            { x: 10920, y: 9100 },
+            { x: -1820, y: 9100 }
+          ],
+          zones: [
+            // 1F: 隣接＆T字接合のある実用的プラン
+            {
+              id: 'z-101', zoneNumber: 'Z-101', name: 'LDK', category: 'Living',
+              floorId: 'floor-1f', baseOffset: 0, height: 2500,
+              vertices: [
+                { x: 0, y: 0 }, { x: 6370, y: 0 }, { x: 6370, y: 3640 },
+                { x: 3640, y: 3640 }, { x: 3640, y: 5460 }, { x: 0, y: 5460 }
+              ],
+              aiNotes: '南側大開口掃き出し窓(W2560×2)、対面キッチン、天井高H=2500'
+            },
+            {
+              id: 'z-102', zoneNumber: 'Z-102', name: '玄関ホール', category: 'Entrance',
+              floorId: 'floor-1f', baseOffset: -150, height: 2550,
+              vertices: [
+                { x: 6370, y: 0 }, { x: 9100, y: 0 }, { x: 9100, y: 3640 }, { x: 6370, y: 3640 }
+              ],
+              aiNotes: '南側玄関ドア、土間段差-150mm、西側LDKへ片開き戸'
+            },
+            {
+              id: 'z-103', zoneNumber: 'Z-103', name: '階段', category: 'Circulation',
+              floorId: 'floor-1f', baseOffset: 0, height: 2800,
+              vertices: [
+                { x: 3640, y: 3640 }, { x: 6370, y: 3640 }, { x: 6370, y: 5460 }, { x: 3640, y: 5460 }
+              ],
+              aiNotes: '折り返し階段14段、階段下収納あり'
+            },
+            {
+              id: 'z-104', zoneNumber: 'Z-104', name: '洗面・浴室', category: 'Wet',
+              floorId: 'floor-1f', baseOffset: 0, height: 2300,
+              vertices: [
+                { x: 0, y: 5460 }, { x: 4550, y: 5460 }, { x: 4550, y: 7280 }, { x: 0, y: 7280 }
+              ],
+              aiNotes: 'UB1616＋洗面脱衣、水回り防音・耐水仕様'
+            },
+            {
+              id: 'z-105', zoneNumber: 'Z-105', name: 'WC・パントリー', category: 'Wet',
+              floorId: 'floor-1f', baseOffset: 0, height: 2300,
+              vertices: [
+                { x: 4550, y: 5460 }, { x: 6370, y: 5460 }, { x: 6370, y: 7280 }, { x: 4550, y: 7280 }
+              ],
+              aiNotes: 'トイレ防音間仕切壁、手洗いカウンター付'
+            },
+            {
+              id: 'z-106', zoneNumber: 'Z-106', name: 'ファミリークローゼット', category: 'Storage',
+              floorId: 'floor-1f', baseOffset: 0, height: 2400,
+              vertices: [
+                { x: 6370, y: 3640 }, { x: 9100, y: 3640 }, { x: 9100, y: 6370 }, { x: 6370, y: 6370 }
+              ],
+              aiNotes: '玄関・水回り双方からアクセス可能な回遊動線'
+            },
+            // 2F
+            {
+              id: 'z-201', zoneNumber: 'Z-201', name: '主寝室', category: 'Living',
+              floorId: 'floor-2f', baseOffset: 0, height: 2400,
+              vertices: [
+                { x: 0, y: 1820 }, { x: 4550, y: 1820 }, { x: 4550, y: 5460 }, { x: 0, y: 5460 }
+              ],
+              aiNotes: '南バルコニーへ掃き出し窓'
+            },
+            {
+              id: 'z-202', zoneNumber: 'Z-202', name: '書斎・ワーク', category: 'Work',
+              floorId: 'floor-2f', baseOffset: 0, height: 2400,
+              vertices: [
+                { x: 4550, y: 1820 }, { x: 9100, y: 1820 }, { x: 9100, y: 4550 }, { x: 4550, y: 4550 }
+              ],
+              aiNotes: '造作カウンターデスク、南東採光窓'
+            },
+            {
+              id: 'z-203', zoneNumber: 'Z-203', name: '2F階段・ホール', category: 'Circulation',
+              floorId: 'floor-2f', baseOffset: 0, height: 2400,
+              vertices: [
+                { x: 3640, y: 4550 }, { x: 7280, y: 4550 }, { x: 7280, y: 6370 }, { x: 3640, y: 6370 }
+              ],
+              aiNotes: '1F階段と直上接続'
+            },
+            {
+              id: 'z-204', zoneNumber: 'Z-204', name: '南バルコニー', category: 'Exterior',
+              floorId: 'floor-2f', baseOffset: -100, height: 1100,
+              vertices: [
+                { x: 0, y: 0 }, { x: 9100, y: 0 }, { x: 9100, y: 1820 }, { x: 0, y: 1820 }
+              ],
+              aiNotes: 'FRP防水、アルミ手摺H=1100'
+            }
+          ]
+        };
+      }
+
+      /* =========================================================================
+       * 4. アプリケーション状態 & Undo/Redo
+       * ========================================================================= */
+      function detectInitialDeviceMode() {
+        const ua = navigator.userAgent || '';
+        const isIPadUA = /iPad/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        const coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+        return (isIPadUA || (navigator.maxTouchPoints > 1 && coarse)) ? 'ipad' : 'pc';
+      }
+
+      const state = {
+        projectName: '',
+        floors: [],
+        activeFloorId: null,
+        siteBoundary: [],
+        zones: [],
+
+        // 表示・スナップ設定
+        unit: 'mm',            // 'mm' | 'm'
+        gridSpacing: 910,      // 内部mm
+        snapGrid: true,
+        snapVertex: true,
+        snapEdge: true,
+        onionSkin: true,
+        showWallPreview: false,
+        showDimensions: true,
+
+        // ツール・操作モード
+        tool: 'select',        // 'select' | 'rect' | 'polygon' | 'site'
+        deviceMode: detectInitialDeviceMode(), // 'pc' | 'ipad'
+        ipadMode: 'edit',      // 'edit' | 'pan' | 'zoom'
+        drawerOpen: window.innerWidth >= 1024,
+        activeTab: 'props',    // 'props' | 'json' | 'tests'
+
+        // 選択状態
+        selection: null,       // { type: 'zone', id } | { type: 'site' } | null
+        selectedVertexIdx: -1, // Deleteキーで選択頂点を削除可能にする
+
+        // カメラビュー（panX, panYはCAD原点(0,0)のスクリーンpx位置、scaleはpx/mm）
+        view: { panX: 160, panY: 500, scale: 0.055 },
+
+        // 一時操作状態
+        mouseCad: { x: 0, y: 0 },
+        snappedCad: { x: 0, y: 0, snapType: null },
+        shiftDown: false,
+        spaceDown: false,
+        drag: null,
+        polyDraft: [],
+        hoverHandle: null,
+
+        // マルチタッチ追跡（iPad操作分離用）
+        activePointers: new Map(),
+        ipadGesture: null,     // { kind: 'pan'|'pinchZoom'|'dragZoom', ... }
+
+        // 履歴・テスト結果
+        history: [],
+        historyIndex: -1,
+        jsonDirty: false,
+        lastTestReport: null
+      };
+
+      function snapshotModel() {
+        return JSON.stringify({
+          projectName: state.projectName,
+          floors: state.floors,
+          siteBoundary: state.siteBoundary,
+          zones: state.zones,
+          activeFloorId: state.activeFloorId
+        });
+      }
+
+      function pushHistory() {
+        const snap = snapshotModel();
+        if (state.historyIndex >= 0 && state.history[state.historyIndex] === snap) return;
+        state.history = state.history.slice(0, state.historyIndex + 1);
+        state.history.push(snap);
+        if (state.history.length > 60) state.history.shift();
+        state.historyIndex = state.history.length - 1;
+        updateHistoryButtons();
+      }
+
+      function restoreSnapshot(snapStr) {
+        const d = JSON.parse(snapStr);
+        state.projectName = d.projectName;
+        state.floors = d.floors;
+        state.siteBoundary = d.siteBoundary || [];
+        state.zones = d.zones;
+        state.activeFloorId = d.floors.some(f => f.id === d.activeFloorId) ? d.activeFloorId : (d.floors[0]?.id || null);
+        if (state.selection?.type === 'zone' && !state.zones.some(z => z.id === state.selection.id)) {
+          state.selection = null;
+          state.selectedVertexIdx = -1;
+        }
+        if (state.selection?.type === 'site' && state.siteBoundary.length < 3) {
+          state.selection = null;
+          state.selectedVertexIdx = -1;
+        }
+        renderAll();
+      }
+
+      function undo() {
+        if (state.historyIndex <= 0) return;
+        state.historyIndex--;
+        restoreSnapshot(state.history[state.historyIndex]);
+        updateHistoryButtons();
+        showToast('元に戻しました');
+      }
+
+      function redo() {
+        if (state.historyIndex >= state.history.length - 1) return;
+        state.historyIndex++;
+        restoreSnapshot(state.history[state.historyIndex]);
+        updateHistoryButtons();
+        showToast('やり直しました');
+      }
+
+      function updateHistoryButtons() {
+        document.getElementById('btnUndo').disabled = state.historyIndex <= 0;
+        document.getElementById('btnRedo').disabled = state.historyIndex >= state.history.length - 1;
+      }
+
+      /* =========================================================================
+       * 5. Canvas 管理・スナップ計算・ビューフィット
+       * ========================================================================= */
+      const canvas = document.getElementById('cadCanvas');
+      const ctx = canvas.getContext('2d');
+      const canvasContainer = document.getElementById('canvasContainer');
+      let canvasW = 800, canvasH = 600, dpr = 1;
+
+      function resizeCanvas() {
+        const rect = canvasContainer.getBoundingClientRect();
+        dpr = window.devicePixelRatio || 1;
+        canvasW = Math.max(120, rect.width);
+        canvasH = Math.max(120, rect.height);
+        canvas.width = Math.round(canvasW * dpr);
+        canvas.height = Math.round(canvasH * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        drawCanvas();
+      }
+
+      const worldToScreen = (wx, wy) => CadEngine.cadToScreen(wx, wy, state.view);
+      const screenToWorld = (sx, sy) => CadEngine.screenToCad(sx, sy, state.view);
+
+      function getActiveFloor() {
+        return state.floors.find(f => f.id === state.activeFloorId) || state.floors[0];
+      }
+
+      function getLowerFloor() {
+        const active = getActiveFloor();
+        if (!active) return null;
+        const sorted = [...state.floors].sort((a, b) => a.index - b.index);
+        const idx = sorted.findIndex(f => f.id === active.id);
+        return idx > 0 ? sorted[idx - 1] : null;
+      }
+
+      function getSelectedZone() {
+        if (state.selection?.type !== 'zone') return null;
+        return state.zones.find(z => z.id === state.selection.id) || null;
+      }
+
+      function getSelectedVertices() {
+        if (state.selection?.type === 'zone') return getSelectedZone()?.vertices || null;
+        if (state.selection?.type === 'site') return state.siteBoundary;
+        return null;
+      }
+
+      // Shiftキーで 0° / 45° / 90° 方向へ拘束
+      function applyAngleConstraint(rawPt, anchor) {
+        if (!anchor) return rawPt;
+        const dx = rawPt.x - anchor.x;
+        const dy = rawPt.y - anchor.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist < 1e-3) return rawPt;
+        const angle = Math.atan2(dy, dx);
+        const snappedAngle = Math.round(angle / (Math.PI / 4)) * (Math.PI / 4);
+        return {
+          x: anchor.x + Math.cos(snappedAngle) * dist,
+          y: anchor.y + Math.sin(snappedAngle) * dist
+        };
+      }
+
+      function computeSnap(rawWorld, options = {}) {
+        const { excludeId = null, excludeVertexIdx = -1, angleAnchor = null } = options;
+        let pt = rawWorld;
+        if (state.shiftDown && angleAnchor) {
+          pt = applyAngleConstraint(rawWorld, angleAnchor);
+        }
+
+        const tolWorld = 12 / state.view.scale;
+        const targetPolys = [];
+        if (state.snapVertex || state.snapEdge) {
+          for (const z of state.zones) {
+            if (z.floorId === state.activeFloorId) targetPolys.push({ id: z.id, pts: z.vertices, closed: true });
+          }
+          if (state.onionSkin) {
+            const lower = getLowerFloor();
+            if (lower) {
+              for (const z of state.zones) {
+                if (z.floorId === lower.id) targetPolys.push({ id: z.id, pts: z.vertices, closed: true });
+              }
+            }
+          }
+          if (state.siteBoundary.length >= 3) {
+            targetPolys.push({ id: '__site__', pts: state.siteBoundary, closed: true });
+          }
+          if (state.polyDraft.length > 0) {
+            targetPolys.push({ id: '__draft__', pts: state.polyDraft, closed: false });
+          }
+        }
+
+        // 1) 頂点スナップ
+        if (state.snapVertex) {
+          let best = null, bestD = tolWorld;
+          for (const poly of targetPolys) {
+            for (let i = 0; i < poly.pts.length; i++) {
+              if (poly.id === excludeId && i === excludeVertexIdx) continue;
+              const v = poly.pts[i];
+              const d = Math.hypot(pt.x - v.x, pt.y - v.y);
+              if (d < bestD) { bestD = d; best = v; }
+            }
+          }
+          if (best) return { x: roundMm(best.x), y: roundMm(best.y), snapType: 'vertex' };
+        }
+
+        // 2) 辺スナップ
+        if (state.snapEdge) {
+          let best = null, bestD = tolWorld * 0.8;
+          for (const poly of targetPolys) {
+            if (poly.id === excludeId || poly.pts.length < 2) continue;
+            const count = poly.closed ? poly.pts.length : poly.pts.length - 1;
+            for (let i = 0; i < count; i++) {
+              const res = CadEngine.closestPointOnSegment(pt, poly.pts[i], poly.pts[(i + 1) % poly.pts.length]);
+              if (res.dist < bestD) { bestD = res.dist; best = { x: res.x, y: res.y }; }
+            }
+          }
+          if (best) return { x: snapRoundMm(best.x), y: snapRoundMm(best.y), snapType: 'edge' };
+        }
+
+        // 3) グリッドスナップ
+        if (state.snapGrid) {
+          const g = state.gridSpacing;
+          const gx = Math.round(pt.x / g) * g;
+          const gy = Math.round(pt.y / g) * g;
+          return { x: snapRoundMm(gx), y: snapRoundMm(gy), snapType: 'grid' };
+        }
+
+        return { x: snapRoundMm(pt.x), y: snapRoundMm(pt.y), snapType: null };
+      }
+
+      function fitView() {
+        const pts = [];
+        const currZones = state.zones.filter(z => z.floorId === state.activeFloorId);
+        const list = currZones.length > 0 ? currZones : state.zones;
+        for (const z of list) pts.push(...z.vertices);
+        if (state.siteBoundary.length >= 3) pts.push(...state.siteBoundary);
+
+        let cx = 4550, cy = 3640, targetScale = Math.min(canvasW, canvasH) / 15000;
+        if (pts.length > 0) {
+          const bb = CadEngine.boundingBox(pts);
+          cx = (bb.minX + bb.maxX) / 2;
+          cy = (bb.minY + bb.maxY) / 2;
+          const padW = Math.max(bb.width, 3200) * 1.32;
+          const padH = Math.max(bb.depth, 3200) * 1.35;
+          targetScale = Math.max(0.006, Math.min(0.45, Math.min((canvasW - 80) / padW, (canvasH - 110) / padH)));
+        }
+        state.view.scale = targetScale;
+        state.view.panX = canvasW / 2 - cx * targetScale;
+        state.view.panY = canvasH / 2 + cy * targetScale;
+        syncZoomUI();
+        drawCanvas();
+      }
+
+      function syncZoomUI() {
+        const pct = Math.round((state.view.scale / 0.05) * 100);
+        document.getElementById('statusZoom').textContent = `${pct}%`;
+        const slider = document.getElementById('ipadZoomSlider');
+        if (slider) {
+          // 対数スケール [-200..200] <-> scale [0.008..0.4]
+          const norm = Math.log(state.view.scale / 0.055) / Math.log(2) * 55;
+          slider.value = String(Math.max(-200, Math.min(200, Math.round(norm))));
+        }
+      }
+
+      /* =========================================================================
+       * 6. 白基調 Material Design 3 CAD キャンバスレンダラー
+       * ========================================================================= */
+      function drawCanvas() {
+        ctx.clearRect(0, 0, canvasW, canvasH);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(0, 0, canvasW, canvasH);
+
+        drawGridAndAxes();
+        drawSiteBoundary();
+        if (state.onionSkin) drawLowerFloorTrace();
+        drawCurrentFloorZones();
+        if (state.showWallPreview) drawDerivedWallsOverlay();
+        drawSelectionHandles();
+        drawInteractiveDrafts();
+        drawSnapMarker();
+      }
+
+      function drawGridAndAxes() {
+        const tl = screenToWorld(0, 0);
+        const br = screenToWorld(canvasW, canvasH);
+        const minX = Math.min(tl.x, br.x), maxX = Math.max(tl.x, br.x);
+        const minY = Math.min(tl.y, br.y), maxY = Math.max(tl.y, br.y);
+
+        let step = state.gridSpacing;
+        while (step * state.view.scale < 14) step *= 2;
+        const majorEvery = 5;
+
+        const startX = Math.floor(minX / step) * step;
+        const startY = Math.floor(minY / step) * step;
+
+        ctx.lineWidth = 1;
+        for (let x = startX; x <= maxX; x += step) {
+          const sx = Math.round(worldToScreen(x, 0).x) + 0.5;
+          const isMajor = Math.round(x / step) % majorEvery === 0;
+          ctx.strokeStyle = isMajor ? '#E0E3E7' : '#F1F3F4';
+          ctx.beginPath();
+          ctx.moveTo(sx, 0);
+          ctx.lineTo(sx, canvasH);
+          ctx.stroke();
+        }
+        for (let y = startY; y <= maxY; y += step) {
+          const sy = Math.round(worldToScreen(0, y).y) + 0.5;
+          const isMajor = Math.round(y / step) % majorEvery === 0;
+          ctx.strokeStyle = isMajor ? '#E0E3E7' : '#F1F3F4';
+          ctx.beginPath();
+          ctx.moveTo(0, sy);
+          ctx.lineTo(canvasW, sy);
+          ctx.stroke();
+        }
+
+        // X軸 (#D93025) & Y軸 (#188038)
+        const origin = worldToScreen(0, 0);
+        ctx.lineWidth = 1.25;
+        ctx.strokeStyle = 'rgba(217, 48, 37, 0.35)';
+        ctx.beginPath();
+        ctx.moveTo(0, origin.y);
+        ctx.lineTo(canvasW, origin.y);
+        ctx.stroke();
+
+        ctx.strokeStyle = 'rgba(24, 128, 56, 0.35)';
+        ctx.beginPath();
+        ctx.moveTo(origin.x, 0);
+        ctx.lineTo(origin.x, canvasH);
+        ctx.stroke();
+
+        // 原点 (0, 0) インジケーター
+        if (origin.x >= -50 && origin.x <= canvasW + 50 && origin.y >= -50 && origin.y <= canvasH + 50) {
+          ctx.lineWidth = 1.8;
+          ctx.strokeStyle = '#D93025';
+          ctx.beginPath();
+          ctx.moveTo(origin.x, origin.y);
+          ctx.lineTo(origin.x + 28, origin.y);
+          ctx.stroke();
+
+          ctx.strokeStyle = '#188038';
+          ctx.beginPath();
+          ctx.moveTo(origin.x, origin.y);
+          ctx.lineTo(origin.x, origin.y - 28);
+          ctx.stroke();
+
+          ctx.fillStyle = '#FFFFFF';
+          ctx.strokeStyle = '#202124';
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          ctx.arc(origin.x, origin.y, 4, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.font = '600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+          ctx.textAlign = 'left';
+          ctx.textBaseline = 'top';
+          ctx.fillStyle = '#5F6368';
+          ctx.fillText('(0,0)', origin.x + 6, origin.y + 6);
+          ctx.fillStyle = '#D93025';
+          ctx.fillText('+X', origin.x + 31, origin.y - 5);
+          ctx.fillStyle = '#188038';
+          ctx.fillText('+Y', origin.x + 4, origin.y - 38);
+        }
+      }
+
+      function drawSiteBoundary() {
+        const pts = state.siteBoundary;
+        if (!pts || pts.length < 3) return;
+        const isSel = state.selection?.type === 'site';
+
+        ctx.save();
+        ctx.beginPath();
+        pts.forEach((p, i) => {
+          const s = worldToScreen(p.x, p.y);
+          if (i === 0) ctx.moveTo(s.x, s.y);
+          else ctx.lineTo(s.x, s.y);
+        });
+        ctx.closePath();
+
+        ctx.fillStyle = isSel ? 'rgba(26, 115, 232, 0.04)' : 'rgba(248, 249, 250, 0.65)';
+        ctx.fill();
+
+        // 建築図面の敷地境界線（二点鎖線）
+        ctx.strokeStyle = isSel ? '#1A73E8' : '#5F6368';
+        ctx.lineWidth = isSel ? 2 : 1.5;
+        ctx.setLineDash([14, 4, 2, 4, 2, 4]);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        const bb = CadEngine.boundingBox(pts);
+        const tl = worldToScreen(bb.minX, bb.maxY);
+        const area = CadEngine.areaSqm(pts);
+        ctx.font = '600 11px -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif';
+        ctx.fillStyle = isSel ? '#174EA6' : '#5F6368';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'bottom';
+        ctx.fillText(`敷地境界  ${area.toFixed(2)}㎡ (${(area / TSUBO_SQM).toFixed(2)}坪)`, tl.x + 2, tl.y - 6);
+
+        if (state.showDimensions && isSel) {
+          drawPolygonDimensions(pts, '#174EA6');
+        }
+        ctx.restore();
+      }
+
+      function drawLowerFloorTrace() {
+        const lower = getLowerFloor();
+        if (!lower) return;
+        const list = state.zones.filter(z => z.floorId === lower.id);
+        if (list.length === 0) return;
+
+        ctx.save();
+        for (const z of list) {
+          if (z.vertices.length < 3) continue;
+          ctx.beginPath();
+          z.vertices.forEach((p, i) => {
+            const s = worldToScreen(p.x, p.y);
+            if (i === 0) ctx.moveTo(s.x, s.y);
+            else ctx.lineTo(s.x, s.y);
+          });
+          ctx.closePath();
+          ctx.fillStyle = 'rgba(241, 243, 244, 0.45)';
+          ctx.fill();
+          ctx.strokeStyle = '#BDC1C6';
+          ctx.lineWidth = 1.25;
+          ctx.setLineDash([5, 4]);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          const lp = CadEngine.labelPoint(z.vertices);
+          const sp = worldToScreen(lp.x, lp.y);
+          ctx.font = '500 10px -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif';
+          ctx.fillStyle = '#9AA0A6';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(`[${lower.name}] ${z.name}`, sp.x, sp.y);
+        }
+        ctx.restore();
+      }
+
+      function drawCurrentFloorZones() {
+        const list = state.zones.filter(z => z.floorId === state.activeFloorId);
+        for (const z of list) {
+          if (z.vertices.length < 3) continue;
+          const isSel = state.selection?.type === 'zone' && state.selection.id === z.id;
+          const cat = ZONE_CATEGORIES[z.category] || ZONE_CATEGORIES.Other;
+
+          ctx.save();
+          ctx.beginPath();
+          z.vertices.forEach((p, i) => {
+            const s = worldToScreen(p.x, p.y);
+            if (i === 0) ctx.moveTo(s.x, s.y);
+            else ctx.lineTo(s.x, s.y);
+          });
+          ctx.closePath();
+
+          // 落ち着いたパステル塗りつぶし
+          ctx.globalAlpha = isSel ? 0.92 : 0.78;
+          ctx.fillStyle = cat.fill;
+          ctx.fill();
+          ctx.globalAlpha = 1.0;
+
+          // 境界線
+          ctx.strokeStyle = isSel ? '#1A73E8' : cat.stroke;
+          ctx.lineWidth = isSel ? 2.4 : 1.5;
+          if (z.category === 'Exterior') ctx.setLineDash([6, 4]);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          // 辺寸法ラベル
+          if (state.showDimensions) {
+            drawPolygonDimensions(z.vertices, isSel ? '#174EA6' : '#5F6368');
+          }
+
+          // ゾーンラベル
+          if (state.showDimensions) {
+            const lp = CadEngine.labelPoint(z.vertices);
+            const sp = worldToScreen(lp.x, lp.y);
+            const area = CadEngine.areaSqm(z.vertices);
+            const tsubo = area / TSUBO_SQM;
+            const title = `${z.zoneNumber ? z.zoneNumber + ' ' : ''}${z.name}`;
+            const sub = `${area.toFixed(2)}㎡ (${tsubo.toFixed(1)}坪)`;
+
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.font = '600 12px -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif';
+            ctx.fillStyle = '#202124';
+            ctx.fillText(title, sp.x, sp.y - (z.aiNotes ? 9 : 6));
+
+            ctx.font = '500 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+            ctx.fillStyle = '#5F6368';
+            ctx.fillText(sub, sp.x, sp.y + (z.aiNotes ? 4 : 8));
+
+            if (z.aiNotes) {
+              ctx.font = '500 9.5px -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif';
+              ctx.fillStyle = '#174EA6';
+              const shortNote = z.aiNotes.length > 14 ? z.aiNotes.slice(0, 14) + '…' : z.aiNotes;
+              ctx.fillText(`Memo: ${shortNote}`, sp.x, sp.y + 16);
+            }
+          }
+          ctx.restore();
+        }
+      }
+
+      function drawPolygonDimensions(pts, textColor) {
+        ctx.save();
+        ctx.font = '500 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        for (let i = 0; i < pts.length; i++) {
+          const a = pts[i], b = pts[(i + 1) % pts.length];
+          const lenMm = Math.hypot(b.x - a.x, b.y - a.y);
+          const sa = worldToScreen(a.x, a.y);
+          const sb = worldToScreen(b.x, b.y);
+          const pxLen = Math.hypot(sb.x - sa.x, sb.y - sa.y);
+          if (pxLen < 42) continue;
+
+          const mx = (sa.x + sb.x) / 2;
+          const my = (sa.y + sb.y) / 2;
+          const nx = -(sb.y - sa.y) / pxLen;
+          const ny = (sb.x - sa.x) / pxLen;
+          const ox = mx + nx * 12;
+          const oy = my + ny * 12;
+
+          const label = formatLen(lenMm, state.unit);
+          const tw = ctx.measureText(label).width;
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.92)';
+          ctx.strokeStyle = '#E0E3E7';
+          ctx.lineWidth = 1;
+          roundRectPath(ctx, ox - tw / 2 - 4, oy - 7.5, tw + 8, 15, 4);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.fillStyle = textColor;
+          ctx.fillText(label, ox, oy + 0.5);
+        }
+        ctx.restore();
+      }
+
+      function drawDerivedWallsOverlay() {
+        const active = getActiveFloor();
+        if (!active) return;
+        const fZones = state.zones.filter(z => z.floorId === active.id);
+        const walls = CadEngine.computeDerivedWallsForFloor(active, fZones);
+        ctx.save();
+        ctx.lineCap = 'round';
+        for (const w of walls) {
+          const sa = worldToScreen(w.start.x, w.start.y);
+          const sb = worldToScreen(w.end.x, w.end.y);
+          ctx.beginPath();
+          ctx.moveTo(sa.x, sa.y);
+          ctx.lineTo(sb.x, sb.y);
+          if (w.type === 'exterior') {
+            ctx.strokeStyle = '#334155'; // 濃いスレート太線（外壁）
+            ctx.lineWidth = 5;
+          } else {
+            ctx.strokeStyle = '#1A73E8'; // ブルーの線（内壁）
+            ctx.lineWidth = 3;
+          }
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      function drawSelectionHandles() {
+        const pts = getSelectedVertices();
+        if (!pts || pts.length < 3 || state.tool !== 'select') return;
+        if (state.deviceMode === 'ipad' && state.ipadMode !== 'edit') return;
+
+        ctx.save();
+        // 辺の中点ハンドル（平行移動／ダブルクリックで頂点追加）
+        for (let i = 0; i < pts.length; i++) {
+          const a = pts[i], b = pts[(i + 1) % pts.length];
+          const mid = worldToScreen((a.x + b.x) / 2, (a.y + b.y) / 2);
+          const isHover = state.hoverHandle?.kind === 'edge' && state.hoverHandle.index === i;
+
+          ctx.save();
+          ctx.translate(mid.x, mid.y);
+          ctx.rotate(Math.PI / 4);
+          const r = isHover ? 5.5 : 4;
+          ctx.fillStyle = isHover ? '#1A73E8' : '#FFFFFF';
+          ctx.strokeStyle = '#1A73E8';
+          ctx.lineWidth = 1.6;
+          ctx.fillRect(-r, -r, r * 2, r * 2);
+          ctx.strokeRect(-r, -r, r * 2, r * 2);
+          ctx.restore();
+        }
+
+        // 頂点ハンドル
+        for (let i = 0; i < pts.length; i++) {
+          const sp = worldToScreen(pts[i].x, pts[i].y);
+          const isHover = state.hoverHandle?.kind === 'vertex' && state.hoverHandle.index === i;
+          const isSelectedVert = state.selectedVertexIdx === i;
+
+          ctx.beginPath();
+          ctx.arc(sp.x, sp.y, (isHover || isSelectedVert) ? 6.5 : 5, 0, Math.PI * 2);
+          ctx.fillStyle = isSelectedVert ? '#1A73E8' : (isHover ? '#E8F0FE' : '#FFFFFF');
+          ctx.fill();
+          ctx.strokeStyle = '#1A73E8';
+          ctx.lineWidth = 2;
+          ctx.stroke();
+
+          ctx.font = '600 9.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+          ctx.fillStyle = '#174EA6';
+          ctx.textAlign = 'left';
+          ctx.textBaseline = 'bottom';
+          ctx.fillText(`#${i + 1}`, sp.x + 7, sp.y - 5);
+        }
+        ctx.restore();
+      }
+
+      function drawInteractiveDrafts() {
+        // 矩形作図中
+        if (state.drag?.kind === 'rect') {
+          const p0 = state.drag.startWorld, p1 = state.drag.currWorld;
+          const minX = Math.min(p0.x, p1.x), maxX = Math.max(p0.x, p1.x);
+          const minY = Math.min(p0.y, p1.y), maxY = Math.max(p0.y, p1.y);
+          const s0 = worldToScreen(minX, maxY), s1 = worldToScreen(maxX, minY);
+
+          ctx.save();
+          ctx.fillStyle = 'rgba(26, 115, 232, 0.10)';
+          ctx.strokeStyle = '#1A73E8';
+          ctx.lineWidth = 2;
+          ctx.fillRect(s0.x, s0.y, s1.x - s0.x, s1.y - s0.y);
+          ctx.strokeRect(s0.x, s0.y, s1.x - s0.x, s1.y - s0.y);
+
+          const w = Math.abs(maxX - minX), d = Math.abs(maxY - minY);
+          const area = (w * d) / 1_000_000;
+          const sc = worldToScreen(p1.x, p1.y);
+          drawWhitePillBadge(sc.x + 14, sc.y - 14, `W ${formatLen(w, state.unit)} × D ${formatLen(d, state.unit)}  (${area.toFixed(2)}㎡)`);
+          ctx.restore();
+        }
+
+        // ポリゴン／敷地境界作図中
+        if ((state.tool === 'polygon' || state.tool === 'site') && state.polyDraft.length > 0) {
+          const isSite = state.tool === 'site';
+          const strokeCol = isSite ? '#5F6368' : '#1A73E8';
+          const fillCol = isSite ? 'rgba(95, 99, 104, 0.08)' : 'rgba(26, 115, 232, 0.08)';
+          const curr = state.snappedCad;
+
+          ctx.save();
+          ctx.beginPath();
+          state.polyDraft.forEach((p, i) => {
+            const sp = worldToScreen(p.x, p.y);
+            if (i === 0) ctx.moveTo(sp.x, sp.y);
+            else ctx.lineTo(sp.x, sp.y);
+          });
+          const sCurr = worldToScreen(curr.x, curr.y);
+          ctx.lineTo(sCurr.x, sCurr.y);
+          if (state.polyDraft.length >= 2) {
+            ctx.fillStyle = fillCol;
+            ctx.fill();
+          }
+          ctx.strokeStyle = strokeCol;
+          ctx.lineWidth = 2;
+          ctx.stroke();
+
+          if (state.polyDraft.length >= 2) {
+            const sFirst = worldToScreen(state.polyDraft[0].x, state.polyDraft[0].y);
+            ctx.strokeStyle = 'rgba(26, 115, 232, 0.35)';
+            ctx.setLineDash([4, 4]);
+            ctx.beginPath();
+            ctx.moveTo(sCurr.x, sCurr.y);
+            ctx.lineTo(sFirst.x, sFirst.y);
+            ctx.stroke();
+            ctx.setLineDash([]);
+          }
+
+          state.polyDraft.forEach((p, i) => {
+            const sp = worldToScreen(p.x, p.y);
+            ctx.beginPath();
+            ctx.arc(sp.x, sp.y, i === 0 ? 6 : 4, 0, Math.PI * 2);
+            ctx.fillStyle = i === 0 ? '#188038' : '#FFFFFF';
+            ctx.fill();
+            ctx.strokeStyle = i === 0 ? '#188038' : strokeCol;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+          });
+
+          const prev = state.polyDraft[state.polyDraft.length - 1];
+          const dx = curr.x - prev.x, dy = curr.y - prev.y;
+          const segLen = Math.hypot(dx, dy);
+          let deg = Math.atan2(dy, dx) * 180 / Math.PI;
+          if (deg < 0) deg += 360;
+          drawWhitePillBadge(sCurr.x + 14, sCurr.y - 16, `L ${formatLen(segLen, state.unit)}  ∠${deg.toFixed(1)}°`);
+          ctx.restore();
+        }
+      }
+
+      function drawSnapMarker() {
+        if (state.spaceDown || state.drag?.kind === 'pan') return;
+        if (state.deviceMode === 'ipad' && state.ipadMode !== 'edit') return;
+        const s = state.snappedCad;
+        if (!s || !s.snapType) return;
+        const sp = worldToScreen(s.x, s.y);
+
+        ctx.save();
+        if (s.snapType === 'vertex') {
+          ctx.strokeStyle = '#188038';
+          ctx.lineWidth = 2;
+          ctx.strokeRect(sp.x - 6, sp.y - 6, 12, 12);
+        } else if (s.snapType === 'edge') {
+          ctx.strokeStyle = '#1A73E8';
+          ctx.lineWidth = 1.8;
+          ctx.beginPath();
+          ctx.moveTo(sp.x, sp.y - 6);
+          ctx.lineTo(sp.x + 6, sp.y);
+          ctx.lineTo(sp.x, sp.y + 6);
+          ctx.lineTo(sp.x - 6, sp.y);
+          ctx.closePath();
+          ctx.stroke();
+        } else if (s.snapType === 'grid' && state.tool !== 'select') {
+          ctx.strokeStyle = 'rgba(26, 115, 232, 0.55)';
+          ctx.lineWidth = 1.4;
+          ctx.beginPath();
+          ctx.arc(sp.x, sp.y, 4, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      function drawWhitePillBadge(x, y, text) {
+        ctx.save();
+        ctx.font = '600 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+        const tw = ctx.measureText(text).width;
+        const bx = Math.min(x, canvasW - tw - 24);
+        const by = Math.max(28, y);
+        ctx.shadowColor = 'rgba(60, 64, 67, 0.16)';
+        ctx.shadowBlur = 6;
+        ctx.shadowOffsetY = 2;
+        ctx.fillStyle = '#FFFFFF';
+        ctx.strokeStyle = '#E0E3E7';
+        ctx.lineWidth = 1;
+        roundRectPath(ctx, bx, by - 19, tw + 16, 24, 12);
+        ctx.fill();
+        ctx.shadowColor = 'transparent';
+        ctx.stroke();
+        ctx.fillStyle = '#202124';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(text, bx + 8, by - 7);
+        ctx.restore();
+      }
+
+      function roundRectPath(c, x, y, w, h, r) {
+        c.beginPath();
+        c.moveTo(x + r, y);
+        c.lineTo(x + w - r, y);
+        c.quadraticCurveTo(x + w, y, x + w, y + r);
+        c.lineTo(x + w, y + h - r);
+        c.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+        c.lineTo(x + r, y + h);
+        c.quadraticCurveTo(x, y + h, x, y + h - r);
+        c.lineTo(x, y + r);
+        c.quadraticCurveTo(x, y, x + r, y);
+        c.closePath();
+      }
+
+      /* =========================================================================
+       * 7. PC / iPad 厳密分離操作ハンドラ & CADヒットテスト
+       * ========================================================================= */
+      function getCanvasPoint(e) {
+        const rect = canvas.getBoundingClientRect();
+        return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+      }
+
+      function hitTestHandles(sx, sy) {
+        const pts = getSelectedVertices();
+        if (!pts || pts.length < 3) return null;
+        const hitR = state.deviceMode === 'ipad' ? 16 : 11;
+        for (let i = 0; i < pts.length; i++) {
+          const sp = worldToScreen(pts[i].x, pts[i].y);
+          if (Math.hypot(sx - sp.x, sy - sp.y) <= hitR) return { kind: 'vertex', index: i };
+        }
+        for (let i = 0; i < pts.length; i++) {
+          const a = pts[i], b = pts[(i + 1) % pts.length];
+          const mid = worldToScreen((a.x + b.x) / 2, (a.y + b.y) / 2);
+          if (Math.hypot(sx - mid.x, sy - mid.y) <= hitR - 1) return { kind: 'edge', index: i };
+        }
+        return null;
+      }
+
+      function hitTestObject(cadPt, sx, sy) {
+        const fZones = state.zones.filter(z => z.floorId === state.activeFloorId);
+        for (let i = fZones.length - 1; i >= 0; i--) {
+          if (CadEngine.pointInPolygon(cadPt, fZones[i].vertices)) {
+            return { type: 'zone', id: fZones[i].id };
+          }
+        }
+        if (state.siteBoundary.length >= 3) {
+          for (let i = 0; i < state.siteBoundary.length; i++) {
+            const a = worldToScreen(state.siteBoundary[i].x, state.siteBoundary[i].y);
+            const b = worldToScreen(state.siteBoundary[(i + 1) % state.siteBoundary.length].x, state.siteBoundary[(i + 1) % state.siteBoundary.length].y);
+            if (CadEngine.closestPointOnSegment({ x: sx, y: sy }, a, b).dist <= 10) {
+              return { type: 'site' };
+            }
+          }
+        }
+        return null;
+      }
+
+      function nextZoneNumber() {
+        const active = getActiveFloor();
+        const fNum = (active?.index ?? 0) + 1;
+        const count = state.zones.filter(z => z.floorId === state.activeFloorId).length + 1;
+        return `Z-${fNum}${String(count).padStart(2, '0')}`;
+      }
+
+      function createNewZone(vertices) {
+        const norm = CadEngine.normalizeCCW(vertices);
+        if (norm.length < 3 || CadEngine.areaSqm(norm) < 0.05) {
+          showToast('面積が小さすぎるため作成をキャンセルしました', 'error');
+          return;
+        }
+        const active = getActiveFloor();
+        const zone = {
+          id: uid('zone'),
+          zoneNumber: nextZoneNumber(),
+          name: `ゾーン ${state.zones.filter(z => z.floorId === active.id).length + 1}`,
+          category: 'Living',
+          floorId: active.id,
+          baseOffset: 0,
+          height: Math.min(2500, active.height || 2600),
+          vertices: norm,
+          aiNotes: ''
+        };
+        state.zones.push(zone);
+        state.selection = { type: 'zone', id: zone.id };
+        state.selectedVertexIdx = -1;
+        pushHistory();
+        renderAll();
+        showToast(`${zone.zoneNumber} を作成しました (${CadEngine.areaSqm(norm).toFixed(2)}㎡)`, 'success');
+      }
+
+      function finalizePolygonDraft() {
+        if (state.polyDraft.length < 3) {
+          state.polyDraft = [];
+          updateDrawingHint();
+          drawCanvas();
+          return;
+        }
+        if (state.tool === 'site') {
+          state.siteBoundary = CadEngine.normalizeCCW(state.polyDraft);
+          state.selection = { type: 'site' };
+          state.selectedVertexIdx = -1;
+          state.polyDraft = [];
+          pushHistory();
+          setTool('select');
+          renderAll();
+          showToast(`敷地境界を設定しました (${CadEngine.areaSqm(state.siteBoundary).toFixed(2)}㎡)`, 'success');
+        } else {
+          const pts = [...state.polyDraft];
+          state.polyDraft = [];
+          updateDrawingHint();
+          createNewZone(pts);
+        }
+      }
+
+      // ===== トラックパッド ピンチ対応 =====
+      // Safari(Mac)はピンチを wheel ではなく gesture* イベントで送る。Chrome/Firefox/Edgeは ctrlKey 付き wheel。
+      // 両方に対応し、ブラウザ標準のページ拡大も抑止する。
+      let safariGesture = null;
+      canvas.addEventListener('gesturestart', (e) => {
+        e.preventDefault();
+        if (state.deviceMode === 'ipad') return;
+        safariGesture = { origView: { ...state.view } };
+      }, { passive: false });
+      canvas.addEventListener('gesturechange', (e) => {
+        e.preventDefault();
+        if (state.deviceMode === 'ipad' || !safariGesture) return;
+        const pt = getCanvasPoint(e);
+        state.view = CadEngine.zoomAtScreenPoint(safariGesture.origView, pt.x, pt.y, safariGesture.origView.scale * e.scale);
+        syncZoomUI();
+        drawCanvas();
+        updateCoordReadout(pt);
+      }, { passive: false });
+      canvas.addEventListener('gestureend', (e) => { e.preventDefault(); safariGesture = null; }, { passive: false });
+      // キャンバス外でのブラウザ標準ズーム（Ctrl+ホイール/ピンチ）も抑止
+      document.addEventListener('wheel', (e) => { if (e.ctrlKey) e.preventDefault(); }, { passive: false });
+      ['gesturestart', 'gesturechange', 'gestureend'].forEach(n => document.addEventListener(n, (e) => e.preventDefault(), { passive: false }));
+
+      function normalizeWheel(e) {
+        const k = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 400 : 1;
+        return { dx: e.deltaX * k, dy: e.deltaY * k };
+      }
+
+      // PCモード：2本指スライド=パン、ピンチ(ctrlKey)=カーソル中心ズーム
+      canvas.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const { dx, dy } = normalizeWheel(e);
+        const isPinch = e.ctrlKey || e.metaKey;
+        const zoomBy = () => {
+          const pt = getCanvasPoint(e);
+          const factor = Math.exp(-Math.max(-100, Math.min(100, dy)) * (e.ctrlKey ? 0.015 : 0.005));
+          state.view = CadEngine.zoomAtScreenPoint(state.view, pt.x, pt.y, state.view.scale * factor);
+          syncZoomUI();
+          drawCanvas();
+          updateCoordReadout(pt);
+        };
+        if (state.deviceMode === 'ipad') {
+          if (state.ipadMode === 'pan' && !isPinch) {
+            state.view.panX -= dx; state.view.panY -= dy; drawCanvas();
+          } else if (state.ipadMode === 'zoom' && isPinch) {
+            zoomBy();
+          }
+          return;
+        }
+        if (isPinch) {
+          zoomBy();
+        } else {
+          state.view.panX -= dx; state.view.panY -= dy; drawCanvas();
+          updateCoordReadout(getCanvasPoint(e));
+        }
+      }, { passive: false });
+
+      // Pointer Events（PC + iPad 統合ハンドリング）
+      canvas.addEventListener('pointerdown', (e) => {
+        closeAllPopovers();
+        canvas.setPointerCapture(e.pointerId);
+        const pt = getCanvasPoint(e);
+        state.activePointers.set(e.pointerId, pt);
+
+        // === iPadモードの厳密分離 ===
+        if (state.deviceMode === 'ipad') {
+          if (state.ipadMode === 'pan') {
+            // 移動のみ許可（1本指でも2本指でもパンのみ、ズームは絶対発動しない）
+            const pts = Array.from(state.activePointers.values());
+            const center = pts.length >= 2
+              ? { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 }
+              : pts[0];
+            state.ipadGesture = {
+              kind: 'pan',
+              startX: center.x, startY: center.y,
+              origPanX: state.view.panX, origPanY: state.view.panY
+            };
+            return;
+          }
+          if (state.ipadMode === 'zoom') {
+            // 拡大縮小のみ許可（パン成分は完全無効化）
+            const pts = Array.from(state.activePointers.values());
+            if (pts.length >= 2) {
+              const dist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y) || 1;
+              const mid = { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 };
+              state.ipadGesture = {
+                kind: 'pinchZoom',
+                startDist: dist,
+                anchorX: mid.x, anchorY: mid.y,
+                origView: { ...state.view }
+              };
+            } else {
+              // 1本指の上下ドラッグで画面中央基準の純粋拡大縮小
+              state.ipadGesture = {
+                kind: 'dragZoom',
+                startY: pt.y,
+                origView: { ...state.view }
+              };
+            }
+            return;
+          }
+          // iPad 'edit' モード：2本目以降のタッチが来たら誤爆パン/ズームを完全にブロック
+          if (state.activePointers.size > 1) {
+            state.drag = null;
+            return;
+          }
+        }
+
+        // === PC補助パン（中ボタン または Space+左ドラッグ） ===
+        if (state.deviceMode === 'pc' && (e.button === 1 || (state.spaceDown && e.button === 0))) {
+          state.drag = {
+            kind: 'pan',
+            startSx: pt.x, startSy: pt.y,
+            origPanX: state.view.panX, origPanY: state.view.panY
+          };
+          canvasContainer.style.cursor = 'grabbing';
+          return;
+        }
+
+        if (e.button !== 0 && e.pointerType === 'mouse') return;
+
+        // === CAD作図・選択・編集（PC通常時 または iPad編集/作図モード時） ===
+        const rawWorld = screenToWorld(pt.x, pt.y);
+
+        if (state.tool === 'rect') {
+          const snapped = computeSnap(rawWorld);
+          state.drag = { kind: 'rect', startWorld: snapped, currWorld: snapped };
+          drawCanvas();
+          return;
+        }
+
+        if (state.tool === 'polygon' || state.tool === 'site') {
+          const anchor = state.polyDraft.length > 0 ? state.polyDraft[state.polyDraft.length - 1] : null;
+          const snapped = computeSnap(rawWorld, { angleAnchor: anchor });
+
+          if (state.polyDraft.length >= 3) {
+            const firstS = worldToScreen(state.polyDraft[0].x, state.polyDraft[0].y);
+            if (Math.hypot(pt.x - firstS.x, pt.y - firstS.y) <= (state.deviceMode === 'ipad' ? 20 : 14)) {
+              finalizePolygonDraft();
+              return;
+            }
+          }
+          if (anchor && Math.hypot(snapped.x - anchor.x, snapped.y - anchor.y) < 1) return;
+          state.polyDraft.push({ x: snapped.x, y: snapped.y });
+          updateDrawingHint();
+          drawCanvas();
+          return;
+        }
+
+        if (state.tool === 'select') {
+          const handle = hitTestHandles(pt.x, pt.y);
+          if (handle) {
+            const pts = getSelectedVertices();
+            const origPts = pts.map(p => ({ ...p }));
+            if (handle.kind === 'vertex') {
+              state.selectedVertexIdx = handle.index;
+              state.drag = {
+                kind: 'moveVertex',
+                index: handle.index,
+                origPts,
+                origVertex: { ...pts[handle.index] },
+                changed: false
+              };
+            } else {
+              state.selectedVertexIdx = -1;
+              const i0 = handle.index;
+              const i1 = (i0 + 1) % pts.length;
+              const a = pts[i0], b = pts[i1];
+              const len = Math.hypot(b.x - a.x, b.y - a.y) || 1;
+              state.drag = {
+                kind: 'moveEdge',
+                i0, i1,
+                nx: -(b.y - a.y) / len,
+                ny: (b.x - a.x) / len,
+                startWorld: rawWorld,
+                origPts,
+                changed: false
+              };
+            }
+            updateSelectionButtons();
+            drawCanvas();
+            return;
+          }
+
+          const hit = hitTestObject(rawWorld, pt.x, pt.y);
+          state.selection = hit;
+          state.selectedVertexIdx = -1;
+          if (hit) {
+            const pts = getSelectedVertices();
+            state.drag = {
+              kind: 'moveObject',
+              startWorld: rawWorld,
+              origPts: pts.map(p => ({ ...p })),
+              refCorner: { ...pts[0] },
+              changed: false
+            };
+          }
+          renderInspector();
+          updateSelectionButtons();
+          drawCanvas();
+        }
+      });
+
+      canvas.addEventListener('pointermove', (e) => {
+        const pt = getCanvasPoint(e);
+        if (state.activePointers.has(e.pointerId)) {
+          state.activePointers.set(e.pointerId, pt);
+        }
+
+        // === iPad専用ジェスチャー処理 ===
+        if (state.deviceMode === 'ipad' && state.ipadGesture) {
+          const g = state.ipadGesture;
+          if (g.kind === 'pan' && state.ipadMode === 'pan') {
+            const pts = Array.from(state.activePointers.values());
+            const center = pts.length >= 2
+              ? { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 }
+              : pts[0];
+            if (center) {
+              state.view.panX = g.origPanX + (center.x - g.startX);
+              state.view.panY = g.origPanY + (center.y - g.startY);
+              drawCanvas();
+            }
+            return;
+          }
+          if (g.kind === 'pinchZoom' && state.ipadMode === 'zoom') {
+            const pts = Array.from(state.activePointers.values());
+            if (pts.length >= 2) {
+              const currDist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
+              const ratio = currDist / g.startDist;
+              // 開始時ピンチ中心のみを基準に純粋ズーム（移動成分は完全無効）
+              state.view = CadEngine.zoomAtScreenPoint(g.origView, g.anchorX, g.anchorY, g.origView.scale * ratio);
+              syncZoomUI();
+              drawCanvas();
+            }
+            return;
+          }
+          if (g.kind === 'dragZoom' && state.ipadMode === 'zoom') {
+            // 上へドラッグ=拡大、下へドラッグ=縮小（画面中央基準でパン無し）
+            const dy = g.startY - pt.y;
+            const factor = Math.exp(dy * 0.008);
+            state.view = CadEngine.zoomAtScreenPoint(g.origView, canvasW / 2, canvasH / 2, g.origView.scale * factor);
+            syncZoomUI();
+            drawCanvas();
+            return;
+          }
+          return;
+        }
+
+        const rawWorld = screenToWorld(pt.x, pt.y);
+        state.mouseCad = rawWorld;
+
+        // === ドラッグ中の処理 ===
+        if (state.drag) {
+          if (state.drag.kind === 'pan') {
+            state.view.panX = state.drag.origPanX + (pt.x - state.drag.startSx);
+            state.view.panY = state.drag.origPanY + (pt.y - state.drag.startSy);
+            drawCanvas();
+            updateCoordReadout(pt);
+            return;
+          }
+
+          if (state.drag.kind === 'rect') {
+            let snapped = computeSnap(rawWorld);
+            if (state.shiftDown) {
+              const dx = snapped.x - state.drag.startWorld.x;
+              const dy = snapped.y - state.drag.startWorld.y;
+              const side = Math.max(Math.abs(dx), Math.abs(dy));
+              snapped = {
+                x: snapRoundMm(state.drag.startWorld.x + Math.sign(dx || 1) * side),
+                y: snapRoundMm(state.drag.startWorld.y + Math.sign(dy || 1) * side),
+                snapType: snapped.snapType
+              };
+            }
+            state.drag.currWorld = snapped;
+            state.snappedCad = snapped;
+            drawCanvas();
+            updateCoordReadout(pt);
+            return;
+          }
+
+          if (state.drag.kind === 'moveVertex') {
+            const excludeId = state.selection?.type === 'zone' ? state.selection.id : '__site__';
+            const snapped = computeSnap(rawWorld, {
+              excludeId,
+              excludeVertexIdx: state.drag.index,
+              angleAnchor: state.drag.origVertex
+            });
+            state.snappedCad = snapped;
+            const pts = getSelectedVertices();
+            if (pts) {
+              pts[state.drag.index] = { x: snapped.x, y: snapped.y };
+              state.drag.changed = true;
+            }
+            drawCanvas();
+            updateCoordReadout(pt);
+            return;
+          }
+
+          if (state.drag.kind === 'moveEdge') {
+            const { i0, i1, nx, ny, startWorld, origPts } = state.drag;
+            let offset = (rawWorld.x - startWorld.x) * nx + (rawWorld.y - startWorld.y) * ny;
+            offset = state.snapGrid ? Math.round(offset / state.gridSpacing) * state.gridSpacing : snapRoundMm(offset);
+            const pts = getSelectedVertices();
+            if (pts) {
+              pts[i0] = { x: roundMm(origPts[i0].x + nx * offset), y: roundMm(origPts[i0].y + ny * offset) };
+              pts[i1] = { x: roundMm(origPts[i1].x + nx * offset), y: roundMm(origPts[i1].y + ny * offset) };
+              state.drag.changed = true;
+            }
+            drawCanvas();
+            updateCoordReadout(pt);
+            return;
+          }
+
+          if (state.drag.kind === 'moveObject') {
+            let dx = rawWorld.x - state.drag.startWorld.x;
+            let dy = rawWorld.y - state.drag.startWorld.y;
+            if (state.shiftDown) {
+              if (Math.abs(dx) >= Math.abs(dy)) dy = 0; else dx = 0;
+            }
+            const excludeId = state.selection?.type === 'zone' ? state.selection.id : '__site__';
+            const targetRef = { x: state.drag.refCorner.x + dx, y: state.drag.refCorner.y + dy };
+            const snappedRef = computeSnap(targetRef, { excludeId });
+            const snapDx = roundMm(snappedRef.x - state.drag.refCorner.x);
+            const snapDy = roundMm(snappedRef.y - state.drag.refCorner.y);
+            state.snappedCad = snappedRef;
+
+            const pts = getSelectedVertices();
+            if (pts) {
+              for (let i = 0; i < pts.length; i++) {
+                pts[i] = {
+                  x: roundMm(state.drag.origPts[i].x + snapDx),
+                  y: roundMm(state.drag.origPts[i].y + snapDy)
+                };
+              }
+              if (Math.abs(snapDx) > 0.1 || Math.abs(snapDy) > 0.1) state.drag.changed = true;
+            }
+            drawCanvas();
+            updateCoordReadout(pt);
+            return;
+          }
+        }
+
+        // ホバー＆スナップ更新
+        const anchor = (state.tool === 'polygon' || state.tool === 'site') && state.polyDraft.length > 0
+          ? state.polyDraft[state.polyDraft.length - 1] : null;
+        state.snappedCad = computeSnap(rawWorld, { angleAnchor: anchor });
+
+        if (state.deviceMode === 'ipad' && state.ipadMode !== 'edit') {
+          canvasContainer.style.cursor = state.ipadMode === 'pan' ? 'grab' : 'ns-resize';
+        } else if (state.spaceDown) {
+          canvasContainer.style.cursor = 'grab';
+        } else if (state.tool === 'select') {
+          state.hoverHandle = hitTestHandles(pt.x, pt.y);
+          canvasContainer.style.cursor = state.hoverHandle ? 'move' : 'default';
+        } else {
+          canvasContainer.style.cursor = 'crosshair';
+        }
+
+        drawCanvas();
+        updateCoordReadout(pt);
+      });
+
+      function handlePointerEnd(e) {
+        state.activePointers.delete(e.pointerId);
+        if (state.activePointers.size === 0) {
+          state.ipadGesture = null;
+        } else if (state.deviceMode === 'ipad' && state.ipadMode === 'pan' && state.activePointers.size === 1) {
+          // 2本指→1本指になった際に基準点をリセットしてジャンプを防止
+          const rem = Array.from(state.activePointers.values())[0];
+          state.ipadGesture = {
+            kind: 'pan',
+            startX: rem.x, startY: rem.y,
+            origPanX: state.view.panX, origPanY: state.view.panY
+          };
+        } else if (state.deviceMode === 'ipad' && state.ipadMode === 'zoom') {
+          state.ipadGesture = null;
+        }
+
+        if (!state.drag) return;
+        const d = state.drag;
+        state.drag = null;
+
+        if (d.kind === 'pan') {
+          canvasContainer.style.cursor = state.spaceDown ? 'grab' : 'default';
+          return;
+        }
+
+        if (d.kind === 'rect') {
+          const p0 = d.startWorld, p1 = d.currWorld;
+          const minX = Math.min(p0.x, p1.x), maxX = Math.max(p0.x, p1.x);
+          const minY = Math.min(p0.y, p1.y), maxY = Math.max(p0.y, p1.y);
+          if (maxX - minX >= 100 && maxY - minY >= 100) {
+            createNewZone([
+              { x: minX, y: minY }, { x: maxX, y: minY },
+              { x: maxX, y: maxY }, { x: minX, y: maxY }
+            ]);
+          } else {
+            drawCanvas();
+          }
+          return;
+        }
+
+        if (d.changed) {
+          if (state.selection?.type === 'zone') {
+            const z = getSelectedZone();
+            if (z) z.vertices = CadEngine.normalizeCCW(z.vertices);
+          } else if (state.selection?.type === 'site') {
+            state.siteBoundary = CadEngine.normalizeCCW(state.siteBoundary);
+          }
+          pushHistory();
+          renderAll();
+        }
+      }
+
+      canvas.addEventListener('pointerup', handlePointerEnd);
+      canvas.addEventListener('pointercancel', handlePointerEnd);
+
+      // ダブルクリック：ポリゴン完了 / 辺の中点に頂点追加
+      canvas.addEventListener('dblclick', (e) => {
+        if (state.deviceMode === 'ipad' && state.ipadMode !== 'edit') return;
+        const pt = getCanvasPoint(e);
+        if ((state.tool === 'polygon' || state.tool === 'site') && state.polyDraft.length >= 3) {
+          finalizePolygonDraft();
+          return;
+        }
+        if (state.tool === 'select') {
+          const handle = hitTestHandles(pt.x, pt.y);
+          const pts = getSelectedVertices();
+          if (handle?.kind === 'edge' && pts) {
+            const i0 = handle.index;
+            const i1 = (i0 + 1) % pts.length;
+            pts.splice(i0 + 1, 0, {
+              x: roundMm((pts[i0].x + pts[i1].x) / 2),
+              y: roundMm((pts[i0].y + pts[i1].y) / 2)
+            });
+            pushHistory();
+            renderAll();
+            showToast('辺の中点に頂点を追加しました', 'success');
+          }
+        }
+      });
+
+      function updateCoordReadout(pt) {
+        const p = state.snappedCad || screenToWorld(pt.x, pt.y);
+        document.getElementById('statusX').textContent = formatCoord(p.x, state.unit);
+        document.getElementById('statusY').textContent = formatCoord(p.y, state.unit);
+        document.getElementById('statusUnit').textContent = state.unit;
+      }
+
+      /* =========================================================================
+       * 8. 自動検証テストスイート（7項目・実関数実行）
+       * ========================================================================= */
+      function runVerificationTests() {
+        const results = [];
+        const approxEq = (a, b, tol = 1e-3) => Math.abs(a - b) <= tol;
+
+        // Test 1: 右手座標系・画面⇔CAD座標変換の往復精度
+        try {
+          const testView = { panX: 320, panY: 480, scale: 0.0625 };
+          const samples = [
+            { x: 0, y: 0 }, { x: 4550, y: 3640 },
+            { x: -1820, y: -2730 }, { x: -910.5, y: 12345.25 }
+          ];
+          let maxErr = 0;
+          for (const p of samples) {
+            const s = CadEngine.cadToScreen(p.x, p.y, testView);
+            const back = CadEngine.screenToCad(s.x, s.y, testView);
+            maxErr = Math.max(maxErr, Math.hypot(back.x - p.x, back.y - p.y));
+          }
+          const s0 = CadEngine.cadToScreen(0, 0, testView);
+          const sUp = CadEngine.cadToScreen(0, 1000, testView);
+          const sRight = CadEngine.cadToScreen(1000, 0, testView);
+          const isRightHanded = (sUp.y < s0.y) && (sRight.x > s0.x);
+          const pass = maxErr < 0.001 && isRightHanded;
+          results.push({
+            id: 'T1',
+            name: '右手座標系 & 画面⇔CAD往復変換精度',
+            pass,
+            expected: '最大誤差 < 0.001mm、+X=右 / +Y=上',
+            actual: `最大誤差 ${maxErr.toExponential(2)}mm (+Y→Δsy=${(sUp.y - s0.y).toFixed(1)}px)`
+          });
+        } catch (err) {
+          results.push({ id: 'T1', name: '右手座標系 & 画面⇔CAD往復変換精度', pass: false, expected: '例外なし', actual: err.message });
+        }
+
+        // Test 2: ズーム中心の座標不変性テスト
+        try {
+          const v0 = { panX: 210, panY: 540, scale: 0.05 };
+          const cursor = { x: 642, y: 215 };
+          const cadBefore = CadEngine.screenToCad(cursor.x, cursor.y, v0);
+          const v1 = CadEngine.zoomAtScreenPoint(v0, cursor.x, cursor.y, 0.185);
+          const v2 = CadEngine.zoomAtScreenPoint(v1, cursor.x, cursor.y, 0.023);
+          const cadAfter1 = CadEngine.screenToCad(cursor.x, cursor.y, v1);
+          const cadAfter2 = CadEngine.screenToCad(cursor.x, cursor.y, v2);
+          const err1 = Math.hypot(cadAfter1.x - cadBefore.x, cadAfter1.y - cadBefore.y);
+          const err2 = Math.hypot(cadAfter2.x - cadBefore.x, cadAfter2.y - cadBefore.y);
+          const maxErr = Math.max(err1, err2);
+          results.push({
+            id: 'T2',
+            name: 'ズーム中心のCAD座標不変性',
+            pass: maxErr < 0.001,
+            expected: '拡大・縮小後の基準点誤差 < 0.001mm',
+            actual: `拡大誤差 ${err1.toExponential(2)}mm / 縮小誤差 ${err2.toExponential(2)}mm`
+          });
+        } catch (err) {
+          results.push({ id: 'T2', name: 'ズーム中心のCAD座標不変性', pass: false, expected: '例外なし', actual: err.message });
+        }
+
+        // Test 3: ポリゴンCCW正規化 & 面積計算テスト（矩形4000×3000 + L字型）
+        try {
+          // 時計回り(CW)で矩形を入力
+          const cwRect = [{ x: 0, y: 0 }, { x: 0, y: 3000 }, { x: 4000, y: 3000 }, { x: 4000, y: 0 }];
+          const normRect = CadEngine.normalizeCCW(cwRect);
+          const rectCCW = CadEngine.signedArea2(normRect) > 0;
+          const rectAreaSqm = CadEngine.areaSqm(normRect);
+          const rectTsubo = rectAreaSqm / TSUBO_SQM;
+
+          // 時計回り(CW)でL字型ポリゴン (6000×4000 から右上 2000×2000 を欠く => 24 - 4 = 20.0㎡)
+          const cwL = [
+            { x: 0, y: 0 }, { x: 0, y: 4000 }, { x: 4000, y: 4000 },
+            { x: 4000, y: 2000 }, { x: 6000, y: 2000 }, { x: 6000, y: 0 }
+          ];
+          const normL = CadEngine.normalizeCCW(cwL);
+          const lCCW = CadEngine.signedArea2(normL) > 0;
+          const lAreaSqm = CadEngine.areaSqm(normL);
+
+          const pass = rectCCW && lCCW && approxEq(rectAreaSqm, 12.0, 1e-6) && approxEq(lAreaSqm, 20.0, 1e-6);
+          results.push({
+            id: 'T3',
+            name: 'CCW自動正規化 & 面積計算（矩形・L字）',
+            pass,
+            expected: 'CCW=true, 矩形=12.00㎡, L字=20.00㎡',
+            actual: `CCW=${rectCCW && lCCW}, 矩形=${rectAreaSqm.toFixed(2)}㎡(${rectTsubo.toFixed(2)}坪), L字=${lAreaSqm.toFixed(2)}㎡`
+          });
+        } catch (err) {
+          results.push({ id: 'T3', name: 'CCW自動正規化 & 面積計算（矩形・L字）', pass: false, expected: '例外なし', actual: err.message });
+        }
+
+        // Test 4: 単位変換 (mm ⇔ m) 精度＆浮動小数点ゴミ混入チェック
+        try {
+          const testVals = [910, 1820, 3640, 6370, -2730, 455, 1234.5];
+          let ratioOk = true;
+          let cleanStrOk = true;
+          const samplesOut = [];
+          for (const mm of testVals) {
+            const mVal = mmToUnit(mm, 'm');
+            const backMm = unitToMm(mVal, 'm');
+            if (!approxEq(mVal * 1000, mm, 1e-4) || !approxEq(backMm, mm, 1e-3)) ratioOk = false;
+            const s = String(mVal);
+            if (/00000|99999/.test(s)) cleanStrOk = false;
+            if (mm === 3640) samplesOut.push(`3640mm→${s}m→${backMm}mm`);
+          }
+          results.push({
+            id: 'T4',
+            name: '単位変換 (mm ⇔ m) 精度・浮動小数点検証',
+            pass: ratioOk && cleanStrOk,
+            expected: '1000:1比率一致 & 小数ゴミなし',
+            actual: `${samplesOut[0]} (全${testVals.length}値 検証${ratioOk && cleanStrOk ? 'OK' : 'NG'})`
+          });
+        } catch (err) {
+          results.push({ id: 'T4', name: '単位変換 (mm ⇔ m) 精度・浮動小数点検証', pass: false, expected: '例外なし', actual: err.message });
+        }
+
+        // Test 5: 共有壁マージ (derivedWalls) 部分重複・T字接合テスト
+        try {
+          // 部屋A: (0,0)-(4000,4000) [周長16000]
+          // 部屋B: (4000,1000)-(7000,5000) [周長14000] -> X=4000上で Y=1000..4000 (長さ3000) が共有壁
+          // 期待値:
+          // - 共有内壁(interior): 1本 (長さ3000, adjacent=['roomA','roomB'])
+          // - 外壁(exterior): 部屋Aの残り(4000+4000+4000+1000=13000) + 部屋Bの残り(3000+4000+3000+1000=11000) = 24000
+          // - 壁長合計: 27000mm (周長和30000 - 共有壁3000)
+          const mockFloor = { id: 'f1', name: '1F', elevation: 0, height: 2800 };
+          const mockZones = [
+            {
+              id: 'roomA', height: 2500,
+              vertices: [{ x: 0, y: 0 }, { x: 4000, y: 0 }, { x: 4000, y: 4000 }, { x: 0, y: 4000 }]
+            },
+            {
+              id: 'roomB', height: 2500,
+              vertices: [{ x: 4000, y: 1000 }, { x: 7000, y: 1000 }, { x: 7000, y: 5000 }, { x: 4000, y: 5000 }]
+            }
+          ];
+          const walls = CadEngine.computeDerivedWallsForFloor(mockFloor, mockZones);
+          const interiors = walls.filter(w => w.type === 'interior');
+          const exteriors = walls.filter(w => w.type === 'exterior');
+          const intLen = interiors.reduce((s, w) => s + w.lengthMm, 0);
+          const extLen = exteriors.reduce((s, w) => s + w.lengthMm, 0);
+          const adjOk = interiors.length === 1 &&
+            interiors[0].adjacentZoneIds.length === 2 &&
+            interiors[0].adjacentZoneIds.includes('roomA') &&
+            interiors[0].adjacentZoneIds.includes('roomB');
+          const pass = adjOk && approxEq(intLen, 3000, 1) && approxEq(extLen, 24000, 1) && approxEq(intLen + extLen, 27000, 1);
+          results.push({
+            id: 'T5',
+            name: '共有壁マージ (T字・部分重複分割)',
+            pass,
+            expected: '内壁1本(3000mm) + 外壁計24000mm = 計27000mm',
+            actual: `内壁${interiors.length}本(${intLen}mm) + 外壁${exteriors.length}本(${extLen}mm) = 計${intLen + extLen}mm`
+          });
+        } catch (err) {
+          results.push({ id: 'T5', name: '共有壁マージ (T字・部分重複分割)', pass: false, expected: '例外なし', actual: err.message });
+        }
+
+        // Test 6: JSONエクスポート→インポート往復完全一致テスト (mm & m 両モード)
+        try {
+          const currentModel = {
+            projectName: state.projectName,
+            floors: state.floors,
+            siteBoundary: state.siteBoundary,
+            zones: state.zones
+          };
+          let maxCoordDiffMm = 0;
+          let attrMatch = true;
+          for (const testUnit of ['mm', 'm']) {
+            const exported = CadEngine.buildExportJson(currentModel, testUnit);
+            const jsonStr = JSON.stringify(exported);
+            const imported = CadEngine.parseImportJson(jsonStr);
+
+            if (imported.floors.length !== currentModel.floors.length ||
+                imported.zones.length !== currentModel.zones.length ||
+                imported.siteBoundary.length !== currentModel.siteBoundary.length) {
+              attrMatch = false;
+            }
+            for (const origZ of currentModel.zones) {
+              const impZ = imported.zones.find(z => z.id === origZ.id);
+              if (!impZ || impZ.name !== origZ.name || impZ.category !== origZ.category || !approxEq(impZ.height, origZ.height, 0.5)) {
+                attrMatch = false;
+                continue;
+              }
+              const origNorm = CadEngine.normalizeCCW(origZ.vertices);
+              if (origNorm.length !== impZ.vertices.length) { attrMatch = false; continue; }
+              for (let i = 0; i < origNorm.length; i++) {
+                maxCoordDiffMm = Math.max(maxCoordDiffMm, Math.hypot(origNorm[i].x - impZ.vertices[i].x, origNorm[i].y - impZ.vertices[i].y));
+              }
+            }
+          }
+          const pass = attrMatch && maxCoordDiffMm < 0.1;
+          results.push({
+            id: 'T6',
+            name: 'JSON出力→再インポート往復一致 (mm & m)',
+            pass,
+            expected: '全属性一致 & 最大頂点誤差 < 0.1mm',
+            actual: `属性一致=${attrMatch}, 最大頂点誤差=${maxCoordDiffMm.toFixed(4)}mm`
+          });
+        } catch (err) {
+          results.push({ id: 'T6', name: 'JSON出力→再インポート往復一致 (mm & m)', pass: false, expected: '例外なし', actual: err.message });
+        }
+
+        // Test 7: 現在の図面データ健全性チェック（自己交差・CCW・面積・建ぺい/容積率）
+        try {
+          const issues = [];
+          for (const z of state.zones) {
+            if (z.vertices.length < 3) issues.push(`${z.zoneNumber}: 頂点不足`);
+            if (CadEngine.signedArea2(z.vertices) <= 0) issues.push(`${z.zoneNumber}: 非CCW`);
+            if (CadEngine.areaSqm(z.vertices) <= 0) issues.push(`${z.zoneNumber}: 面積0`);
+            if (CadEngine.hasSelfIntersection(z.vertices)) issues.push(`${z.zoneNumber}: 自己交差あり`);
+          }
+          if (state.siteBoundary.length >= 3) {
+            if (CadEngine.signedArea2(state.siteBoundary) <= 0) issues.push('敷地: 非CCW');
+            if (CadEngine.hasSelfIntersection(state.siteBoundary)) issues.push('敷地: 自己交差あり');
+          }
+          const exported = CadEngine.buildExportJson({
+            projectName: state.projectName, floors: state.floors,
+            siteBoundary: state.siteBoundary, zones: state.zones
+          }, state.unit);
+          const bcrOk = exported.site ? (exported.project.approxBCRPercent >= 0 && Number.isFinite(exported.project.approxBCRPercent)) : true;
+          const farOk = exported.site ? (exported.project.approxFARPercent >= 0 && Number.isFinite(exported.project.approxFARPercent)) : true;
+          if (!bcrOk || !farOk) issues.push('建ぺい率/容積率の計算異常');
+
+          const pass = issues.length === 0;
+          results.push({
+            id: 'T7',
+            name: '現在の図面データ健全性ライブ検証',
+            pass,
+            expected: '自己交差なし・全CCW・面積>0・法規指標正常',
+            actual: pass
+              ? `全${state.zones.length}ゾーン正常 / 建ぺい${exported.project.approxBCRPercent ?? '-'}%・容積${exported.project.approxFARPercent ?? '-'}%`
+              : issues.join(', ')
+          });
+        } catch (err) {
+          results.push({ id: 'T7', name: '現在の図面データ健全性ライブ検証', pass: false, expected: '例外なし', actual: err.message });
+        }
+
+        const passed = results.filter(r => r.pass).length;
+        state.lastTestReport = { passed, total: results.length, results, timestamp: new Date() };
+        renderTestResults();
+        return state.lastTestReport;
+      }
+
+      function renderTestResults() {
+        const rep = state.lastTestReport;
+        if (!rep) return;
+        const allPass = rep.passed === rep.total;
+        const badgeText = `${rep.passed}/${rep.total}`;
+
+        // トップバー＆タブバッジ更新
+        const topDot = document.getElementById('topTestDot');
+        const topBadge = document.getElementById('topTestBadge');
+        const tabBadge = document.getElementById('tabTestCount');
+        topDot.className = `w-2 h-2 rounded-full ${allPass ? 'bg-md-success' : 'bg-md-danger'}`;
+        topBadge.textContent = badgeText;
+        topBadge.className = `font-mono text-[10px] px-1.5 py-0.5 rounded-full font-semibold tabular-nums ${allPass ? 'bg-emerald-50 text-md-success' : 'bg-red-50 text-md-danger'}`;
+        tabBadge.textContent = badgeText;
+        tabBadge.className = `font-mono text-[10px] px-1.5 py-0.2 rounded-full ${allPass ? 'bg-emerald-50 text-md-success' : 'bg-red-50 text-md-danger'}`;
+
+        const timeStr = rep.timestamp.toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        document.getElementById('testSummaryText').textContent = allPass
+          ? `全 ${rep.total} 項目 PASS（最終実行 ${timeStr}）`
+          : `${rep.total - rep.passed} 件の問題を検出（最終実行 ${timeStr}）`;
+
+        const listEl = document.getElementById('testResultsList');
+        listEl.innerHTML = rep.results.map(r => `
+          <div class="border ${r.pass ? 'border-md-border bg-white' : 'border-red-200 bg-red-50/40'} rounded-xl p-2.5 space-y-1">
+            <div class="flex items-center justify-between gap-2">
+              <div class="font-semibold text-md-text text-[11.5px] flex items-center gap-1.5 min-w-0">
+                <span class="font-mono text-[10px] text-md-muted shrink-0">${r.id}</span>
+                <span class="truncate">${escapeHtml(r.name)}</span>
+              </div>
+              <span class="font-mono text-[10px] font-semibold px-2 py-0.5 rounded-full shrink-0 ${
+                r.pass ? 'bg-emerald-50 text-md-success border border-emerald-200' : 'bg-red-50 text-md-danger border border-red-200'
+              }">${r.pass ? 'PASS' : 'FAIL'}</span>
+            </div>
+            <div class="text-[10.5px] text-md-secondary leading-snug">
+              <div><span class="text-md-muted">期待:</span> ${escapeHtml(r.expected)}</div>
+              <div class="font-mono text-[10px] text-md-text mt-0.5 tabular-nums"><span class="font-sans text-md-muted">実測:</span> ${escapeHtml(r.actual)}</div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      /* =========================================================================
+       * 9. UIレンダリング（フロア・プロパティ・JSON・デバイスモード）
+       * ========================================================================= */
+      function renderAll() {
+        renderFloorSegments();
+        renderInspector();
+        updateSelectionButtons();
+        syncJsonPanel(true);
+        drawCanvas();
+        runVerificationTests();
+      }
+
+      function renderFloorSegments() {
+        const sorted = [...state.floors].sort((a, b) => a.index - b.index);
+        const container = document.getElementById('floorSegmentContainer');
+        container.innerHTML = sorted.map(f => {
+          const active = f.id === state.activeFloorId;
+          return `
+            <button data-floor-id="${f.id}" class="md-seg-btn ${active ? 'active' : ''} px-2.5 py-1 rounded-md text-xs font-semibold flex items-center gap-1 shrink-0">
+              <span>${escapeHtml(f.name)}</span>
+              <span class="text-[10px] font-mono opacity-65 tabular-nums">${state.zones.filter(z => z.floorId === f.id).length}</span>
+            </button>
+          `;
+        }).join('');
+
+        container.querySelectorAll('[data-floor-id]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.activeFloorId = btn.dataset.floorId;
+            state.selection = null;
+            state.selectedVertexIdx = -1;
+            state.polyDraft = [];
+            updateDrawingHint();
+            renderAll();
+          });
+        });
+      }
+
+      function renderFloorPopover() {
+        const listEl = document.getElementById('floorPopoverList');
+        const u = state.unit;
+        const stepAttr = u === 'm' ? '0.01' : '10';
+        const sorted = [...state.floors].sort((a, b) => b.index - a.index);
+
+        listEl.innerHTML = sorted.map(f => `
+          <div class="bg-md-surface border border-md-border rounded-lg p-2 grid grid-cols-12 gap-1.5 items-end" data-fid="${f.id}">
+            <div class="col-span-3">
+              <label class="block text-[10px] text-md-secondary mb-0.5">フロア名</label>
+              <input type="text" class="fp-name w-full bg-white border border-md-border rounded-md px-1.5 py-1 text-xs text-md-text" value="${escapeHtml(f.name)}" />
+            </div>
+            <div class="col-span-4">
+              <label class="block text-[10px] text-md-secondary mb-0.5">基準EL (${u})</label>
+              <input type="number" step="${stepAttr}" class="fp-elev w-full bg-white border border-md-border rounded-md px-1.5 py-1 font-mono text-xs text-right tabular-nums" value="${mmToUnit(f.elevation, u)}" />
+            </div>
+            <div class="col-span-4">
+              <label class="block text-[10px] text-md-secondary mb-0.5">階高 (${u})</label>
+              <input type="number" step="${stepAttr}" class="fp-height w-full bg-white border border-md-border rounded-md px-1.5 py-1 font-mono text-xs text-right tabular-nums" value="${mmToUnit(f.height, u)}" />
+            </div>
+            <div class="col-span-1 flex justify-end">
+              <button class="fp-del w-6 h-7 rounded text-md-muted hover:text-md-danger hover:bg-red-50 disabled:opacity-25" ${state.floors.length <= 1 ? 'disabled' : ''} title="削除">✕</button>
+            </div>
+          </div>
+        `).join('');
+
+        listEl.querySelectorAll('[data-fid]').forEach(row => {
+          const f = state.floors.find(item => item.id === row.dataset.fid);
+          if (!f) return;
+          row.querySelector('.fp-name').addEventListener('change', (e) => {
+            f.name = e.target.value.trim() || f.name;
+            pushHistory(); renderAll();
+          });
+          row.querySelector('.fp-elev').addEventListener('change', (e) => {
+            f.elevation = unitToMm(e.target.value, state.unit);
+            pushHistory(); renderAll();
+          });
+          row.querySelector('.fp-height').addEventListener('change', (e) => {
+            const v = unitToMm(e.target.value, state.unit);
+            if (v >= 1000) { f.height = v; pushHistory(); renderAll(); }
+          });
+          row.querySelector('.fp-del').addEventListener('click', () => {
+            if (state.floors.length <= 1) return;
+            state.floors = state.floors.filter(item => item.id !== f.id);
+            state.zones = state.zones.filter(z => z.floorId !== f.id);
+            if (state.activeFloorId === f.id) state.activeFloorId = state.floors[0].id;
+            state.selection = null;
+            pushHistory(); renderAll(); renderFloorPopover();
+            showToast(`${f.name} を削除しました`);
+          });
+        });
+      }
+
+      function addNewFloor() {
+        const sorted = [...state.floors].sort((a, b) => a.index - b.index);
+        const top = sorted[sorted.length - 1];
+        const nextIdx = top ? top.index + 1 : 0;
+        const f = {
+          id: uid('floor'),
+          index: nextIdx,
+          name: `${nextIdx + 1}F`,
+          elevation: top ? top.elevation + top.height : 0,
+          height: 2800
+        };
+        state.floors.push(f);
+        state.activeFloorId = f.id;
+        state.selection = null;
+        pushHistory();
+        renderAll();
+        showToast(`${f.name} を追加しました`, 'success');
+      }
+
+      function updateSelectionButtons() {
+        document.getElementById('btnDuplicate').disabled = state.selection?.type !== 'zone';
+        document.getElementById('btnDelete').disabled = !state.selection;
+      }
+
+      function updateDrawingHint() {
+        const pill = document.getElementById('drawingHintPill');
+        const finBtn = document.getElementById('btnFinishPolyHint');
+        if (state.tool === 'polygon' || state.tool === 'site') {
+          pill.classList.remove('hidden');
+          const label = state.tool === 'site' ? '敷地境界作図' : 'ポリゴン作図';
+          document.getElementById('drawingHintText').textContent =
+            `${label} (${state.polyDraft.length}点) — クリックで頂点追加 / 始点クリック・Enterで閉じる`;
+          finBtn.classList.toggle('hidden', state.polyDraft.length < 3);
+        } else if (state.tool === 'rect') {
+          pill.classList.remove('hidden');
+          document.getElementById('drawingHintText').textContent = '矩形ゾーン作図 — ドラッグで領域を作成（Shiftで正方形）';
+          finBtn.classList.add('hidden');
+        } else {
+          pill.classList.add('hidden');
+        }
+      }
+
+      function renderInspector() {
+        const panel = document.getElementById('tabPanelProps');
+        const u = state.unit;
+        const stepAttr = u === 'm' ? '0.001' : '1';
+
+        // === ゾーン選択時 ===
+        if (state.selection?.type === 'zone') {
+          const z = getSelectedZone();
+          if (!z) { state.selection = null; renderInspector(); return; }
+          const cat = ZONE_CATEGORIES[z.category] || ZONE_CATEGORIES.Other;
+          const area = CadEngine.areaSqm(z.vertices);
+          const tsubo = area / TSUBO_SQM;
+          const perim = CadEngine.perimeterMm(z.vertices) / 1000;
+          const isRect = CadEngine.isAxisAlignedRect(z.vertices);
+          const bb = CadEngine.boundingBox(z.vertices);
+
+          const catOpts = Object.entries(ZONE_CATEGORIES).map(([k, v]) =>
+            `<option value="${k}" ${z.category === k ? 'selected' : ''}>${v.label} (${k})</option>`
+          ).join('');
+
+          const vertRows = z.vertices.map((v, idx) => `
+            <tr class="border-b border-md-border/70 ${state.selectedVertexIdx === idx ? 'bg-md-primaryContainer/50' : ''}">
+              <td class="py-1 px-1.5 font-mono text-[10px] text-md-secondary">#${idx + 1}</td>
+              <td class="py-1 px-1">
+                <input type="number" step="${stepAttr}" data-v-idx="${idx}" data-axis="x" value="${mmToUnit(v.x, u)}"
+                  class="vert-inp w-full bg-white border border-md-border rounded-md px-1.5 py-0.5 font-mono text-[11px] text-right tabular-nums focus:outline-none focus:border-md-primary" />
+              </td>
+              <td class="py-1 px-1">
+                <input type="number" step="${stepAttr}" data-v-idx="${idx}" data-axis="y" value="${mmToUnit(v.y, u)}"
+                  class="vert-inp w-full bg-white border border-md-border rounded-md px-1.5 py-0.5 font-mono text-[11px] text-right tabular-nums focus:outline-none focus:border-md-primary" />
+              </td>
+              <td class="py-1 px-1 text-right whitespace-nowrap">
+                <button data-v-add="${idx}" class="px-1 text-md-primary hover:bg-md-primaryContainer rounded" title="次の辺の中点に頂点追加">+</button>
+                <button data-v-del="${idx}" ${z.vertices.length <= 3 ? 'disabled' : ''} class="px-1 text-md-muted hover:text-md-danger hover:bg-red-50 rounded disabled:opacity-25" title="頂点削除">✕</button>
+              </td>
+            </tr>
+          `).join('');
+
+          panel.innerHTML = `
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-sm border" style="background:${cat.fill}; border-color:${cat.stroke};"></span>
+                <span class="font-semibold text-md-text">ゾーンプロパティ</span>
+              </div>
+              <button id="btnClearSel" class="text-[11px] text-md-primary hover:underline">概要へ戻る</button>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1.5 bg-md-surface border border-md-border rounded-xl p-2.5 text-center tabular-nums">
+              <div><div class="text-[10px] text-md-secondary">面積</div><div class="font-mono font-semibold text-md-text text-xs mt-0.5">${area.toFixed(2)}㎡</div></div>
+              <div class="border-x border-md-border"><div class="text-[10px] text-md-secondary">坪数</div><div class="font-mono font-semibold text-md-text text-xs mt-0.5">${tsubo.toFixed(2)}坪</div></div>
+              <div><div class="text-[10px] text-md-secondary">周長</div><div class="font-mono font-semibold text-md-text text-xs mt-0.5">${perim.toFixed(2)}m</div></div>
+            </div>
+
+            <div class="space-y-2.5 border border-md-border rounded-xl p-3 bg-white">
+              <div class="grid grid-cols-3 gap-2">
+                <div>
+                  <label class="block text-[10px] text-md-secondary mb-1">ゾーン番号</label>
+                  <input id="inpZoneNum" type="text" value="${escapeHtml(z.zoneNumber)}" class="w-full bg-md-surface focus:bg-white border border-md-border rounded-lg px-2 py-1.5 font-mono text-xs focus:outline-none focus:border-md-primary" />
+                </div>
+                <div class="col-span-2">
+                  <label class="block text-[10px] text-md-secondary mb-1">ゾーン名称</label>
+                  <input id="inpZoneName" type="text" value="${escapeHtml(z.name)}" class="w-full bg-md-surface focus:bg-white border border-md-border rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:border-md-primary" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-[10px] text-md-secondary mb-1">カテゴリ（配色）</label>
+                <select id="inpZoneCat" class="w-full bg-md-surface focus:bg-white border border-md-border rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:border-md-primary">${catOpts}</select>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label class="block text-[10px] text-md-secondary mb-1">天井高 (${u})</label>
+                  <input id="inpZoneH" type="number" step="${stepAttr}" value="${mmToUnit(z.height, u)}" class="w-full bg-md-surface focus:bg-white border border-md-border rounded-lg px-2 py-1.5 font-mono text-xs text-right tabular-nums focus:outline-none focus:border-md-primary" />
+                </div>
+                <div>
+                  <label class="block text-[10px] text-md-secondary mb-1">床オフセット (${u})</label>
+                  <input id="inpZoneOff" type="number" step="${stepAttr}" value="${mmToUnit(z.baseOffset || 0, u)}" class="w-full bg-md-surface focus:bg-white border border-md-border rounded-lg px-2 py-1.5 font-mono text-xs text-right tabular-nums focus:outline-none focus:border-md-primary" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-[10px] text-md-secondary mb-1">AI指示メモ (aiNotes)</label>
+                <textarea id="inpAiNotes" rows="2" placeholder="開口部・建具・構造・仕上げの指示を記入" class="w-full bg-md-surface focus:bg-white border border-md-border rounded-lg px-2.5 py-1.5 text-xs focus:outline-none focus:border-md-primary resize-none">${escapeHtml(z.aiNotes || '')}</textarea>
+              </div>
+            </div>
+
+            ${isRect ? `
+            <div class="border border-md-border rounded-xl p-3 bg-md-surface/60 space-y-2">
+              <div class="text-[11px] font-semibold text-md-text">矩形ダイレクト寸法 (${u})</div>
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label class="block text-[10px] text-md-secondary mb-0.5">原点 X</label>
+                  <input id="rectX" type="number" step="${stepAttr}" value="${mmToUnit(bb.minX, u)}" class="rect-inp w-full bg-white border border-md-border rounded-lg px-2 py-1 font-mono text-xs text-right tabular-nums focus:outline-none focus:border-md-primary" />
+                </div>
+                <div>
+                  <label class="block text-[10px] text-md-secondary mb-0.5">原点 Y</label>
+                  <input id="rectY" type="number" step="${stepAttr}" value="${mmToUnit(bb.minY, u)}" class="rect-inp w-full bg-white border border-md-border rounded-lg px-2 py-1 font-mono text-xs text-right tabular-nums focus:outline-none focus:border-md-primary" />
+                </div>
+                <div>
+                  <label class="block text-[10px] text-md-secondary mb-0.5">幅 W</label>
+                  <input id="rectW" type="number" step="${stepAttr}" value="${mmToUnit(bb.width, u)}" class="rect-inp w-full bg-white border border-md-border rounded-lg px-2 py-1 font-mono text-xs text-right tabular-nums focus:outline-none focus:border-md-primary" />
+                </div>
+                <div>
+                  <label class="block text-[10px] text-md-secondary mb-0.5">奥行 D</label>
+                  <input id="rectD" type="number" step="${stepAttr}" value="${mmToUnit(bb.depth, u)}" class="rect-inp w-full bg-white border border-md-border rounded-lg px-2 py-1 font-mono text-xs text-right tabular-nums focus:outline-none focus:border-md-primary" />
+                </div>
+              </div>
+            </div>` : ''}
+
+            <div class="border border-md-border rounded-xl p-3 bg-white space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold text-md-text">頂点座標テーブル (CCW / ${u})</span>
+                <span class="text-[10px] font-mono text-md-muted">${z.vertices.length}点</span>
+              </div>
+              <table class="w-full border-collapse">
+                <thead>
+                  <tr class="text-[10px] text-md-secondary border-b border-md-border">
+                    <th class="text-left py-1 px-1.5 w-7">#</th>
+                    <th class="text-right py-1 px-1">X</th>
+                    <th class="text-right py-1 px-1">Y</th>
+                    <th class="text-right py-1 px-1 w-11"></th>
+                  </tr>
+                </thead>
+                <tbody>${vertRows}</tbody>
+              </table>
+            </div>
+          `;
+
+          bindZoneInspector(z);
+          return;
+        }
+
+        // === 敷地境界選択時 ===
+        if (state.selection?.type === 'site' && state.siteBoundary.length >= 3) {
+          const area = CadEngine.areaSqm(state.siteBoundary);
+          const rows = state.siteBoundary.map((v, idx) => `
+            <tr class="border-b border-md-border/70">
+              <td class="py-1 px-1.5 font-mono text-[10px] text-md-secondary">#${idx + 1}</td>
+              <td class="py-1 px-1"><input type="number" step="${stepAttr}" data-v-idx="${idx}" data-axis="x" value="${mmToUnit(v.x, u)}" class="site-inp w-full bg-white border border-md-border rounded-md px-1.5 py-0.5 font-mono text-[11px] text-right tabular-nums" /></td>
+              <td class="py-1 px-1"><input type="number" step="${stepAttr}" data-v-idx="${idx}" data-axis="y" value="${mmToUnit(v.y, u)}" class="site-inp w-full bg-white border border-md-border rounded-md px-1.5 py-0.5 font-mono text-[11px] text-right tabular-nums" /></td>
+              <td class="py-1 px-1 text-right">
+                <button data-s-del="${idx}" ${state.siteBoundary.length <= 3 ? 'disabled' : ''} class="px-1 text-md-muted hover:text-md-danger disabled:opacity-25">✕</button>
+              </td>
+            </tr>
+          `).join('');
+
+          panel.innerHTML = `
+            <div class="flex items-center justify-between">
+              <span class="font-semibold text-md-text">敷地境界 (site)</span>
+              <button id="btnClearSel" class="text-[11px] text-md-primary hover:underline">概要へ戻る</button>
+            </div>
+            <div class="bg-md-surface border border-md-border rounded-xl p-3 flex items-center justify-between tabular-nums">
+              <div>
+                <div class="text-[10px] text-md-secondary">敷地面積</div>
+                <div class="font-mono font-semibold text-sm text-md-text">${area.toFixed(2)}㎡ <span class="text-xs text-md-secondary">(${(area / TSUBO_SQM).toFixed(2)}坪)</span></div>
+              </div>
+              <button id="btnDelSite" class="px-2.5 py-1 rounded-lg border border-red-200 text-md-danger hover:bg-red-50 text-[11px] font-medium">削除</button>
+            </div>
+            <div class="border border-md-border rounded-xl p-3">
+              <div class="text-[11px] font-semibold text-md-text mb-1.5">敷地頂点座標 (CCW / ${u})</div>
+              <table class="w-full border-collapse">
+                <thead><tr class="text-[10px] text-md-secondary border-b border-md-border"><th class="text-left py-1 px-1.5">#</th><th class="text-right py-1 px-1">X</th><th class="text-right py-1 px-1">Y</th><th></th></tr></thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          `;
+
+          document.getElementById('btnClearSel').addEventListener('click', clearSelection);
+          document.getElementById('btnDelSite').addEventListener('click', deleteSelected);
+          panel.querySelectorAll('.site-inp').forEach(inp => {
+            inp.addEventListener('change', () => {
+              const i = Number(inp.dataset.vIdx);
+              state.siteBoundary[i][inp.dataset.axis] = unitToMm(inp.value, state.unit);
+              state.siteBoundary = CadEngine.normalizeCCW(state.siteBoundary);
+              pushHistory(); renderAll();
+            });
+          });
+          panel.querySelectorAll('[data-s-del]').forEach(btn => {
+            btn.addEventListener('click', () => {
+              if (state.siteBoundary.length <= 3) return;
+              state.siteBoundary.splice(Number(btn.dataset.sDel), 1);
+              pushHistory(); renderAll();
+            });
+          });
+          return;
+        }
+
+        // === 未選択時：プロジェクト概要＆現階ゾーン一覧 ===
+        const active = getActiveFloor();
+        const sortedFloors = [...state.floors].sort((a, b) => a.index - b.index);
+        const siteArea = state.siteBoundary.length >= 3 ? CadEngine.areaSqm(state.siteBoundary) : 0;
+        const firstFloor = sortedFloors[0];
+        const footprint = firstFloor
+          ? state.zones.filter(z => z.floorId === firstFloor.id && z.category !== 'Exterior').reduce((s, z) => s + CadEngine.areaSqm(z.vertices), 0)
+          : 0;
+        const totalIndoor = state.zones.filter(z => z.category !== 'Exterior').reduce((s, z) => s + CadEngine.areaSqm(z.vertices), 0);
+        const bcr = siteArea > 0 ? `${((footprint / siteArea) * 100).toFixed(1)}%` : '—';
+        const far = siteArea > 0 ? `${((totalIndoor / siteArea) * 100).toFixed(1)}%` : '—';
+
+        const floorZones = state.zones.filter(z => z.floorId === active?.id);
+        const zoneCards = floorZones.length === 0
+          ? `<div class="text-center py-6 text-md-muted text-xs bg-md-surface rounded-xl border border-dashed border-md-border">この階にゾーンがありません。<br/>左ツールの矩形(R)またはポリゴン(P)で作図できます。</div>`
+          : floorZones.map(z => {
+              const cat = ZONE_CATEGORIES[z.category] || ZONE_CATEGORIES.Other;
+              const a = CadEngine.areaSqm(z.vertices);
+              return `
+                <button data-sel-zone="${z.id}" class="w-full text-left px-3 py-2 rounded-xl border border-md-border bg-white hover:bg-md-surface hover:border-gray-300 flex items-center justify-between gap-2 transition-colors">
+                  <div class="flex items-center gap-2 min-w-0">
+                    <span class="w-2.5 h-2.5 rounded-sm border shrink-0" style="background:${cat.fill}; border-color:${cat.stroke};"></span>
+                    <div class="truncate">
+                      <span class="font-mono text-[10px] text-md-muted mr-1">${escapeHtml(z.zoneNumber)}</span>
+                      <span class="font-medium text-md-text">${escapeHtml(z.name)}</span>
+                    </div>
+                  </div>
+                  <span class="font-mono text-[11px] text-md-secondary tabular-nums shrink-0">${a.toFixed(1)}㎡</span>
+                </button>
+              `;
+            }).join('');
+
+        panel.innerHTML = `
+          <div class="space-y-1.5">
+            <label class="block text-[11px] font-medium text-md-secondary">プロジェクト名</label>
+            <input id="inpProjName" type="text" value="${escapeHtml(state.projectName)}" class="w-full bg-md-surface focus:bg-white border border-md-border rounded-lg px-2.5 py-1.5 text-xs text-md-text focus:outline-none focus:border-md-primary" />
+          </div>
+
+          <!-- 建築面積・延床面積・法規概算カード -->
+          <div class="bg-md-surface border border-md-border rounded-xl p-3 space-y-2.5 tabular-nums">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-semibold text-md-text">プロジェクト面積サマリー</span>
+              ${siteArea > 0 ? '<button id="btnSelectSiteOverview" class="text-[11px] text-md-primary hover:underline">敷地編集</button>' : ''}
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <div class="bg-white border border-md-border rounded-lg p-2">
+                <div class="text-[10px] text-md-secondary">敷地面積</div>
+                <div class="font-mono font-semibold text-md-text mt-0.5">${siteArea > 0 ? siteArea.toFixed(1) + '㎡' : '未設定'}</div>
+              </div>
+              <div class="bg-white border border-md-border rounded-lg p-2">
+                <div class="text-[10px] text-md-secondary">建築面積 (1F)</div>
+                <div class="font-mono font-semibold text-md-text mt-0.5">${footprint.toFixed(1)}㎡</div>
+              </div>
+              <div class="bg-white border border-md-border rounded-lg p-2">
+                <div class="text-[10px] text-md-secondary">延床面積</div>
+                <div class="font-mono font-semibold text-md-primary mt-0.5">${totalIndoor.toFixed(1)}㎡ <span class="text-[10px] text-md-muted">(${(totalIndoor / TSUBO_SQM).toFixed(1)}坪)</span></div>
+              </div>
+              <div class="bg-white border border-md-border rounded-lg p-2">
+                <div class="text-[10px] text-md-secondary">概算 建ぺい / 容積</div>
+                <div class="font-mono font-semibold text-md-text mt-0.5">${bcr} / ${far}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-semibold text-md-text">${escapeHtml(active?.name || '')} のゾーン一覧 (${floorZones.length})</span>
+              <span class="text-[10px] font-mono text-md-muted">EL ${formatLen(active?.elevation || 0, u)}</span>
+            </div>
+            <div class="space-y-1.5">${zoneCards}</div>
+          </div>
+        `;
+
+        document.getElementById('inpProjName').addEventListener('change', (e) => {
+          state.projectName = e.target.value;
+          pushHistory(); syncJsonPanel(true);
+        });
+        const selSiteBtn = document.getElementById('btnSelectSiteOverview');
+        if (selSiteBtn) {
+          selSiteBtn.addEventListener('click', () => {
+            state.selection = { type: 'site' };
+            setTool('select');
+            renderInspector(); updateSelectionButtons(); drawCanvas();
+          });
+        }
+        panel.querySelectorAll('[data-sel-zone]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.selection = { type: 'zone', id: btn.dataset.selZone };
+            state.selectedVertexIdx = -1;
+            setTool('select');
+            renderInspector(); updateSelectionButtons(); drawCanvas();
+          });
+        });
+      }
+
+      function bindZoneInspector(z) {
+        const panel = document.getElementById('tabPanelProps');
+        document.getElementById('btnClearSel').addEventListener('click', clearSelection);
+
+        const commit = () => { pushHistory(); drawCanvas(); syncJsonPanel(true); runVerificationTests(); };
+        document.getElementById('inpZoneNum').addEventListener('input', (e) => { z.zoneNumber = e.target.value; drawCanvas(); });
+        document.getElementById('inpZoneNum').addEventListener('change', commit);
+        document.getElementById('inpZoneName').addEventListener('input', (e) => { z.name = e.target.value; drawCanvas(); });
+        document.getElementById('inpZoneName').addEventListener('change', commit);
+        document.getElementById('inpZoneCat').addEventListener('change', (e) => { z.category = e.target.value; pushHistory(); renderAll(); });
+        document.getElementById('inpZoneH').addEventListener('change', (e) => {
+          const v = unitToMm(e.target.value, state.unit);
+          if (v >= 300) { z.height = v; commit(); }
+        });
+        document.getElementById('inpZoneOff').addEventListener('change', (e) => {
+          z.baseOffset = unitToMm(e.target.value, state.unit);
+          commit();
+        });
+        document.getElementById('inpAiNotes').addEventListener('input', (e) => { z.aiNotes = e.target.value; drawCanvas(); });
+        document.getElementById('inpAiNotes').addEventListener('change', commit);
+
+        // 矩形ダイレクト編集
+        if (document.getElementById('rectX')) {
+          const applyRect = () => {
+            const x = unitToMm(document.getElementById('rectX').value, state.unit);
+            const y = unitToMm(document.getElementById('rectY').value, state.unit);
+            const w = unitToMm(document.getElementById('rectW').value, state.unit);
+            const d = unitToMm(document.getElementById('rectD').value, state.unit);
+            if (w < 50 || d < 50) return;
+            z.vertices = [
+              { x, y }, { x: roundMm(x + w), y },
+              { x: roundMm(x + w), y: roundMm(y + d) }, { x, y: roundMm(y + d) }
+            ];
+            pushHistory(); renderAll();
+          };
+          panel.querySelectorAll('.rect-inp').forEach(inp => inp.addEventListener('change', applyRect));
+        }
+
+        // 頂点テーブル編集
+        panel.querySelectorAll('.vert-inp').forEach(inp => {
+          inp.addEventListener('change', () => {
+            const idx = Number(inp.dataset.vIdx);
+            z.vertices[idx][inp.dataset.axis] = unitToMm(inp.value, state.unit);
+            z.vertices = CadEngine.normalizeCCW(z.vertices);
+            pushHistory(); renderAll();
+          });
+        });
+        panel.querySelectorAll('[data-v-add]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const i = Number(btn.dataset.vAdd);
+            const a = z.vertices[i], b = z.vertices[(i + 1) % z.vertices.length];
+            z.vertices.splice(i + 1, 0, { x: roundMm((a.x + b.x) / 2), y: roundMm((a.y + b.y) / 2) });
+            pushHistory(); renderAll();
+          });
+        });
+        panel.querySelectorAll('[data-v-del]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            if (z.vertices.length <= 3) return;
+            z.vertices.splice(Number(btn.dataset.vDel), 1);
+            z.vertices = CadEngine.normalizeCCW(z.vertices);
+            state.selectedVertexIdx = -1;
+            pushHistory(); renderAll();
+          });
+        });
+      }
+
+      function clearSelection() {
+        state.selection = null;
+        state.selectedVertexIdx = -1;
+        renderInspector();
+        updateSelectionButtons();
+        drawCanvas();
+      }
+
+      function syncJsonPanel(force = false) {
+        const editor = document.getElementById('jsonEditor');
+        const payload = CadEngine.buildExportJson({
+          projectName: state.projectName,
+          floors: state.floors,
+          siteBoundary: state.siteBoundary,
+          zones: state.zones
+        }, state.unit);
+
+        const wallCount = payload.floors.reduce((acc, f) => acc + f.derivedWalls.length, 0);
+        document.getElementById('derivedWallBadge').textContent = `${wallCount} 壁`;
+
+        if (!force && state.jsonDirty && document.activeElement === editor) return;
+        editor.value = JSON.stringify(payload, null, 2);
+        state.jsonDirty = false;
+        const badge = document.getElementById('jsonSyncBadge');
+        badge.textContent = '同期済み';
+        badge.className = 'text-[10px] font-mono text-md-success';
+        document.getElementById('jsonErrorBox').classList.add('hidden');
+      }
+
+      function buildAiPromptText() {
+        const payload = CadEngine.buildExportJson({
+          projectName: state.projectName,
+          floors: state.floors,
+          siteBoundary: state.siteBoundary,
+          zones: state.zones
+        }, state.unit);
+        const unitDesc = state.unit === 'm' ? 'm（メートル / Archicad API標準）' : 'mm（ミリメートル）';
+        return [
+          '以下の建築ゾーニング中間JSONに従って、Archicad（Python API / Tapir / MCP等）で正確なフロア・敷地境界・ゾーン・壁・スラブを生成してください。',
+          '',
+          '【仕様】',
+          `- 座標系: 右手座標系（+X右 / +Y上）、ポリゴン頂点は反時計回り（CCW）正規化済み`,
+          `- 単位: ${unitDesc}`,
+          `- floors[].derivedWalls に共有境界を分割マージ済みの外壁(exterior)・内壁(interior)の始点/終点座標と隣接ゾーンIDが含まれています。壁生成の基準線として利用してください。`,
+          `- 各ゾーンの aiNotes に記載された設計要件（開口部・建具・段差・防音等）をモデリングに反映してください。`,
+          '',
+          '```json',
+          JSON.stringify(payload, null, 2),
+          '```'
+        ].join('\n');
+      }
+
+      /* =========================================================================
+       * 10. モード切替・コマンド・イベント登録
+       * ========================================================================= */
+      function setTool(toolName) {
+        state.tool = toolName;
+        state.polyDraft = [];
+        state.drag = null;
+        document.querySelectorAll('[data-tool]').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.tool === toolName);
+        });
+        if (state.deviceMode === 'ipad') setIpadMode('edit');
+        updateDrawingHint();
+        drawCanvas();
+      }
+
+      function setUnit(u) {
+        state.unit = u === 'm' ? 'm' : 'mm';
+        document.getElementById('unitMmBtn').classList.toggle('active', state.unit === 'mm');
+        document.getElementById('unitMBtn').classList.toggle('active', state.unit === 'm');
+        document.getElementById('statusUnit').textContent = state.unit;
+        renderAll();
+      }
+
+      function setDeviceMode(mode) {
+        state.deviceMode = mode === 'ipad' ? 'ipad' : 'pc';
+        document.getElementById('btnDevicePC').classList.toggle('active', state.deviceMode === 'pc');
+        document.getElementById('btnDeviceIPad').classList.toggle('active', state.deviceMode === 'ipad');
+        document.getElementById('ipadModeBar').classList.toggle('hidden', state.deviceMode !== 'ipad');
+        document.getElementById('pcGestureHint').classList.toggle('xl:inline', state.deviceMode === 'pc');
+        if (state.deviceMode === 'ipad') setIpadMode(state.ipadMode);
+        else canvasContainer.style.cursor = state.tool === 'select' ? 'default' : 'crosshair';
+        drawCanvas();
+      }
+
+      function setIpadMode(mode) {
+        state.ipadMode = mode;
+        document.querySelectorAll('.ipad-mode-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.ipadMode === mode);
+        });
+        document.getElementById('ipadZoomControls').classList.toggle('hidden', mode !== 'zoom');
+        if (mode === 'pan') canvasContainer.style.cursor = 'grab';
+        else if (mode === 'zoom') canvasContainer.style.cursor = 'ns-resize';
+        else canvasContainer.style.cursor = state.tool === 'select' ? 'default' : 'crosshair';
+        drawCanvas();
+      }
+
+      function setDrawerOpen(open) {
+        state.drawerOpen = open;
+        const drawer = document.getElementById('rightDrawer');
+        if (open) {
+          drawer.classList.remove('hidden');
+        } else {
+          drawer.classList.add('hidden');
+        }
+        resizeCanvas();
+      }
+
+      function setRightTab(tab) {
+        state.activeTab = tab;
+        const map = {
+          props: { btn: 'tabBtnProps', panel: 'tabPanelProps' },
+          json:  { btn: 'tabBtnJson',  panel: 'tabPanelJson'  },
+          tests: { btn: 'tabBtnTests', panel: 'tabPanelTests' }
+        };
+        for (const [k, v] of Object.entries(map)) {
+          document.getElementById(v.btn).classList.toggle('active', k === tab);
+          document.getElementById(v.panel).classList.toggle('hidden', k !== tab);
+        }
+        if (tab === 'json') syncJsonPanel(true);
+        if (tab === 'tests') runVerificationTests();
+      }
+
+      function closeAllPopovers() {
+        document.getElementById('snapPopover').classList.add('hidden');
+        document.getElementById('floorPopover').classList.add('hidden');
+      }
+
+      function syncGridButtons() {
+        document.getElementById('snapSummaryPill').textContent = String(state.gridSpacing);
+        document.querySelectorAll('.grid-opt-btn').forEach(btn => {
+          const active = Number(btn.dataset.gridMm) === state.gridSpacing;
+          btn.classList.toggle('bg-md-primaryContainer', active);
+          btn.classList.toggle('text-md-onPrimaryContainer', active);
+          btn.classList.toggle('border-md-primary', active);
+          btn.classList.toggle('font-semibold', active);
+        });
+      }
+
+      function duplicateSelected() {
+        const z = getSelectedZone();
+        if (!z) return;
+        const copy = {
+          ...z,
+          id: uid('zone'),
+          zoneNumber: nextZoneNumber(),
+          name: `${z.name} (複製)`,
+          vertices: z.vertices.map(v => ({ x: roundMm(v.x + state.gridSpacing), y: roundMm(v.y - state.gridSpacing) }))
+        };
+        state.zones.push(copy);
+        state.selection = { type: 'zone', id: copy.id };
+        state.selectedVertexIdx = -1;
+        pushHistory();
+        renderAll();
+        showToast(`${copy.zoneNumber} を複製しました`, 'success');
+      }
+
+      function deleteSelected() {
+        if (!state.selection) return;
+        // 頂点が選択されている場合は頂点のみ削除（3点以下は不可）
+        if (state.selectedVertexIdx >= 0) {
+          const pts = getSelectedVertices();
+          if (pts && pts.length > 3) {
+            pts.splice(state.selectedVertexIdx, 1);
+            if (state.selection.type === 'zone') {
+              const z = getSelectedZone();
+              z.vertices = CadEngine.normalizeCCW(z.vertices);
+            } else {
+              state.siteBoundary = CadEngine.normalizeCCW(state.siteBoundary);
+            }
+            state.selectedVertexIdx = -1;
+            pushHistory();
+            renderAll();
+            showToast('選択した頂点を削除しました');
+            return;
+          } else {
+            showToast('ポリゴンは3頂点未満にできません', 'error');
+            return;
+          }
+        }
+
+        if (state.selection.type === 'zone') {
+          const z = getSelectedZone();
+          state.zones = state.zones.filter(item => item.id !== state.selection.id);
+          state.selection = null;
+          pushHistory();
+          renderAll();
+          showToast(`${z?.zoneNumber || 'ゾーン'} を削除しました`);
+        } else if (state.selection.type === 'site') {
+          state.siteBoundary = [];
+          state.selection = null;
+          pushHistory();
+          renderAll();
+          showToast('敷地境界を削除しました');
+        }
+      }
+
+      function bindUIEvents() {
+        window.addEventListener('resize', resizeCanvas);
+
+        // 左ツールレール
+        document.querySelectorAll('[data-tool]').forEach(btn => {
+          btn.addEventListener('click', () => setTool(btn.dataset.tool));
+        });
+        document.getElementById('btnUndo').addEventListener('click', undo);
+        document.getElementById('btnRedo').addEventListener('click', redo);
+        document.getElementById('btnFitView').addEventListener('click', fitView);
+        document.getElementById('btnDuplicate').addEventListener('click', duplicateSelected);
+        document.getElementById('btnDelete').addEventListener('click', deleteSelected);
+
+        // 作図ヒントボタン
+        document.getElementById('btnFinishPolyHint').addEventListener('click', finalizePolygonDraft);
+        document.getElementById('btnCancelPolyHint').addEventListener('click', () => {
+          state.polyDraft = [];
+          setTool('select');
+        });
+
+        // トップバー操作
+        document.getElementById('unitMmBtn').addEventListener('click', () => setUnit('mm'));
+        document.getElementById('unitMBtn').addEventListener('click', () => setUnit('m'));
+        document.getElementById('btnAddFloorQuick').addEventListener('click', addNewFloor);
+        document.getElementById('btnAddFloorInPop').addEventListener('click', () => {
+          addNewFloor();
+          renderFloorPopover();
+        });
+
+        // ポップオーバー開閉
+        document.getElementById('btnFloorPopover').addEventListener('click', (e) => {
+          e.stopPropagation();
+          const pop = document.getElementById('floorPopover');
+          const willOpen = pop.classList.contains('hidden');
+          closeAllPopovers();
+          if (willOpen) { renderFloorPopover(); pop.classList.remove('hidden'); }
+        });
+        document.getElementById('btnSnapPopover').addEventListener('click', (e) => {
+          e.stopPropagation();
+          const pop = document.getElementById('snapPopover');
+          const willOpen = pop.classList.contains('hidden');
+          closeAllPopovers();
+          if (willOpen) { syncGridButtons(); pop.classList.remove('hidden'); }
+        });
+        document.getElementById('floorPopover').addEventListener('click', (e) => e.stopPropagation());
+        document.getElementById('snapPopover').addEventListener('click', (e) => e.stopPropagation());
+        window.addEventListener('click', closeAllPopovers);
+
+        // スナップ・表示ポップオーバー内コントロール
+        document.querySelectorAll('.grid-opt-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.gridSpacing = Number(btn.dataset.gridMm);
+            syncGridButtons();
+            drawCanvas();
+          });
+        });
+        const bindCheck = (id, key) => {
+          document.getElementById(id).addEventListener('change', (e) => {
+            state[key] = e.target.checked;
+            drawCanvas();
+          });
+        };
+        bindCheck('chkSnapGrid', 'snapGrid');
+        bindCheck('chkSnapVertex', 'snapVertex');
+        bindCheck('chkSnapEdge', 'snapEdge');
+        bindCheck('chkOnionSkin', 'onionSkin');
+        bindCheck('chkWallPreview', 'showWallPreview');
+        bindCheck('chkShowDims', 'showDimensions');
+
+        // トップバー「出力テスト」＆「JSONコピー」＆ドロワー開閉
+        document.getElementById('btnRunTestsTop').addEventListener('click', () => {
+          if (!state.drawerOpen) setDrawerOpen(true);
+          setRightTab('tests');
+          const rep = runVerificationTests();
+          showToast(`出力テスト完了: ${rep.passed}/${rep.total} PASS`, rep.passed === rep.total ? 'success' : 'error');
+        });
+        document.getElementById('btnCopyJsonTop').addEventListener('click', () => {
+          const payload = CadEngine.buildExportJson({
+            projectName: state.projectName, floors: state.floors,
+            siteBoundary: state.siteBoundary, zones: state.zones
+          }, state.unit);
+          copyTextToClipboard(JSON.stringify(payload, null, 2), `JSON (${state.unit}) をクリップボードにコピーしました`);
+        });
+        document.getElementById('btnToggleDrawer').addEventListener('click', () => setDrawerOpen(!state.drawerOpen));
+
+        // 右ドロワータブ
+        document.getElementById('tabBtnProps').addEventListener('click', () => setRightTab('props'));
+        document.getElementById('tabBtnJson').addEventListener('click', () => setRightTab('json'));
+        document.getElementById('tabBtnTests').addEventListener('click', () => setRightTab('tests'));
+        document.getElementById('btnRerunTests').addEventListener('click', () => {
+          const rep = runVerificationTests();
+          showToast(`検証テスト再実行: ${rep.passed}/${rep.total} PASS`, rep.passed === rep.total ? 'success' : 'error');
+        });
+
+        // JSONタブのアクション
+        document.getElementById('btnCopyJsonDrawer').addEventListener('click', () => {
+          document.getElementById('btnCopyJsonTop').click();
+        });
+        document.getElementById('btnCopyAiPrompt').addEventListener('click', () => {
+          copyTextToClipboard(buildAiPromptText(), 'AI指示プロンプト付きJSONをコピーしました');
+        });
+        document.getElementById('btnDownloadJson').addEventListener('click', () => {
+          const payload = CadEngine.buildExportJson({
+            projectName: state.projectName, floors: state.floors,
+            siteBoundary: state.siteBoundary, zones: state.zones
+          }, state.unit);
+          const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = `archizone_${state.unit}.json`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          showToast('JSONファイルを保存しました', 'success');
+        });
+        document.getElementById('jsonEditor').addEventListener('input', () => {
+          state.jsonDirty = true;
+          const badge = document.getElementById('jsonSyncBadge');
+          badge.textContent = '未反映';
+          badge.className = 'text-[10px] font-mono text-amber-600';
+        });
+        document.getElementById('btnRefreshJson').addEventListener('click', () => {
+          syncJsonPanel(true);
+          showToast('現在の図面からJSONを再生成しました');
+        });
+        document.getElementById('btnImportJson').addEventListener('click', () => {
+          const errBox = document.getElementById('jsonErrorBox');
+          errBox.classList.add('hidden');
+          try {
+            const parsed = CadEngine.parseImportJson(document.getElementById('jsonEditor').value);
+            state.projectName = parsed.projectName;
+            state.floors = parsed.floors;
+            state.zones = parsed.zones;
+            state.siteBoundary = parsed.siteBoundary;
+            state.activeFloorId = parsed.floors[0].id;
+            state.selection = null;
+            state.selectedVertexIdx = -1;
+            state.unit = parsed.unit;
+            document.getElementById('unitMmBtn').classList.toggle('active', state.unit === 'mm');
+            document.getElementById('unitMBtn').classList.toggle('active', state.unit === 'm');
+            pushHistory();
+            renderAll();
+            fitView();
+            showToast(`JSONから図面を再構築しました (${parsed.floors.length}階 / ${parsed.zones.length}ゾーン)`, 'success');
+          } catch (err) {
+            errBox.textContent = err.message;
+            errBox.classList.remove('hidden');
+          }
+        });
+
+        // デバイスモード切替 & iPad専用バー
+        document.getElementById('btnDevicePC').addEventListener('click', () => setDeviceMode('pc'));
+        document.getElementById('btnDeviceIPad').addEventListener('click', () => setDeviceMode('ipad'));
+        document.getElementById('btnZoomReset').addEventListener('click', fitView);
+
+        document.querySelectorAll('.ipad-mode-btn').forEach(btn => {
+          btn.addEventListener('click', () => setIpadMode(btn.dataset.ipadMode));
+        });
+        document.getElementById('ipadZoomInBtn').addEventListener('click', () => {
+          state.view = CadEngine.zoomAtScreenPoint(state.view, canvasW / 2, canvasH / 2, state.view.scale * 1.2);
+          syncZoomUI(); drawCanvas();
+        });
+        document.getElementById('ipadZoomOutBtn').addEventListener('click', () => {
+          state.view = CadEngine.zoomAtScreenPoint(state.view, canvasW / 2, canvasH / 2, state.view.scale / 1.2);
+          syncZoomUI(); drawCanvas();
+        });
+        document.getElementById('ipadZoomSlider').addEventListener('input', (e) => {
+          const val = Number(e.target.value);
+          const targetScale = 0.055 * Math.pow(2, val / 55);
+          state.view = CadEngine.zoomAtScreenPoint(state.view, canvasW / 2, canvasH / 2, targetScale);
+          syncZoomUI(); drawCanvas();
+        });
+
+        // キーボードショートカット
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'Shift') state.shiftDown = true;
+          const tag = document.activeElement?.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+
+          if (e.code === 'Space') {
+            e.preventDefault();
+            state.spaceDown = true;
+            if (state.deviceMode === 'pc') canvasContainer.style.cursor = 'grab';
+            return;
+          }
+          if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') {
+            e.preventDefault();
+            if (e.shiftKey) redo(); else undo();
+            return;
+          }
+          if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') {
+            e.preventDefault(); redo(); return;
+          }
+          if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'd') {
+            e.preventDefault(); duplicateSelected(); return;
+          }
+
+          const k = e.key.toLowerCase();
+          if (k === 'v') setTool('select');
+          else if (k === 'r') setTool('rect');
+          else if (k === 'p') setTool('polygon');
+          else if (k === 's') setTool('site');
+          else if (k === 'f') fitView();
+          else if (k === 'g') { state.snapGrid = !state.snapGrid; document.getElementById('chkSnapGrid').checked = state.snapGrid; drawCanvas(); }
+          else if (k === 'm') { state.snapVertex = !state.snapVertex; document.getElementById('chkSnapVertex').checked = state.snapVertex; drawCanvas(); }
+          else if (k === 'o') { state.onionSkin = !state.onionSkin; document.getElementById('chkOnionSkin').checked = state.onionSkin; drawCanvas(); }
+          else if (e.key === 'Enter' && (state.tool === 'polygon' || state.tool === 'site')) {
+            e.preventDefault(); finalizePolygonDraft();
+          } else if (e.key === 'Escape') {
+            if (state.polyDraft.length > 0) { state.polyDraft = []; updateDrawingHint(); drawCanvas(); }
+            else { clearSelection(); setTool('select'); }
+          } else if (e.key === 'Backspace' || e.key === 'Delete') {
+            if ((state.tool === 'polygon' || state.tool === 'site') && state.polyDraft.length > 0) {
+              state.polyDraft.pop(); updateDrawingHint(); drawCanvas();
+            } else if (state.selection) {
+              e.preventDefault(); deleteSelected();
+            }
+          }
+        });
+
+        window.addEventListener('keyup', (e) => {
+          if (e.key === 'Shift') state.shiftDown = false;
+          if (e.code === 'Space') {
+            state.spaceDown = false;
+            if (state.deviceMode === 'pc') {
+              canvasContainer.style.cursor = state.tool === 'select' ? 'default' : 'crosshair';
+            }
+          }
+        });
+      }
+
+      /* =========================================================================
+       * 11. 初期化
+       * ========================================================================= */
+      window.addEventListener('load', () => {
+        const sample = createDefaultResidentialModel();
+        state.projectName = sample.projectName;
+        state.floors = sample.floors;
+        state.siteBoundary = sample.siteBoundary;
+        state.zones = sample.zones;
+        state.activeFloorId = sample.floors[0].id;
+
+        bindUIEvents();
+        setDrawerOpen(state.drawerOpen);
+        setDeviceMode(state.deviceMode);
+        syncGridButtons();
+        resizeCanvas();
+        pushHistory();
+        fitView();
+        renderAll();
+      });
+    })();
+  </script>
+</body>
+</html>
